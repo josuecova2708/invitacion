@@ -1,0 +1,3002 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <!--  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <title>Josue & Rebeca</title>
+    <meta property="og:title" content="Nuestra boda - Josue & Rebeca" />
+    <meta property="og:site_name" content="Nuestra boda - Josue & Rebeca" />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/portada.jpg"
+    />
+
+    <meta
+      property="og:description"
+      content="Te esperamos para celebrar este dia especial."
+    />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="650" />
+    <!-- <meta property="og:updated_time" content="1440432930"> -->
+    <meta property="og:type" content="website" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Alex+Brush&family=Amatic+SC:wght@400;700&family=Beiruti:wght@200..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Gluten:wght@100..900&family=Gruppo&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Parisienne&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Qwitcher+Grypen:wght@400;700&family=Saira+Semi+Condensed:wght@100..900&display=swap"
+    />
+
+    <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Gruppo&family=Gluten:wght@400;600&display=swap">
+    <link rel="stylesheet" href="../../css/estilo.css"> -->
+
+    <!-- sombras -->
+
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body class="user-select-none position-relative_">
+    <div
+      class="position-absolute vh-100 vw-100 d-none justify-content-center"
+      id="modal_informe"
+    >
+      <div
+        class="position-relative_ pantalla_2 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-50 sticky-top_"
+        style="z-index: 100 !important; padding: 5%"
+      >
+        <div
+          class="rounded-4 fs_4 color_4 f_cormorant fw-semibold shadow bg_2 position-relative"
+          style="padding: 12% 5% 5% 5%"
+        >
+          <div class="text-center">Enviado correctamente!</div>
+          <div
+            class="position-absolute top-0 start-50 translate-middle"
+            style="width: 30%"
+          >
+            <div class="ratio ratio-1x1">
+              <div
+                class="h-100 w-100 bg_2 shadow d-flex justify-content-center align-items-center rounded-circle"
+              >
+                <div class="fs_3 f_cormorant fw-bold color_4">
+                  J <span class="fs_2">&</span> D
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-light bg-gradient d-flex justify-content-center align-items-center vh-100 vw-100"
+      style="position: absolute; z-index: 80000"
+      id="carga"
+    >
+      <i class="bi bi-arrow-clockwise fs-3 rotating"></i>
+    </div>
+
+    <!-- offcanvas -->
+
+    <div
+      class="offcanvas offcanvas-start fondo_1_ ts_1 bg-white bg-opacity-25 text-light"
+      tabindex="-1"
+      id="ofcanvas_menu"
+      aria-labelledby="ofcanvas_menuLabel"
+    >
+      <div class="offcanvas-header justify-content-between">
+        <h5 class="offcanvas-title" id="ofcanvas_menuLabel"></h5>
+
+        <div
+          type="div"
+          class="btn-close-white_"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="bi bi-x-lg fs-1"></i>
+        </div>
+        <div></div>
+      </div>
+      <div class="offcanvas-body">
+        <div class="text-center">
+          <div
+            class="f_gruppo fs-4 py-2 border-light fw-semibold border-bottom"
+            onclick="javascript: location.hash = 'inicio';"
+            data-bs-dismiss="offcanvas"
+          >
+            Inicio
+          </div>
+          <div
+            class="f_gruppo fs-4 py-2 border-light fw-semibold border-bottom"
+            onclick="javascript: location.hash = 'cuando';"
+            data-bs-dismiss="offcanvas"
+          >
+            Cuando?
+          </div>
+          <div
+            class="f_gruppo fs-4 py-2 border-light fw-semibold border-bottom"
+            onclick="javascript: location.hash = 'padres';"
+            data-bs-dismiss="offcanvas"
+          >
+            Nuestros padres
+          </div>
+          <!-- <div class="f_gruppo fs-4 py-2 border-light fw-semibold border-bottom"
+                    onclick="javascript:location.hash='padrinos'" data-bs-dismiss="offcanvas">
+                    Nuestros padrinos
+                </div> -->
+          <div
+            class="f_gruppo fs-4 py-2 border-light fw-semibold border-bottom"
+            onclick="javascript: location.hash = 'donde';"
+            data-bs-dismiss="offcanvas"
+          >
+            Donde?
+          </div>
+          <div
+            class="f_gruppo fs-4 py-2 border-light fw-semibold border-bottom"
+            onclick="javascript: location.hash = 'codigo_vestimenta';"
+            data-bs-dismiss="offcanvas"
+          >
+            Codigo de vestimenta
+          </div>
+          <!--   <div class="f_gruppo fs-4 py-2 border-light fw-semibold border-bottom"
+                    onclick="javascript:location.hash='galeria'" data-bs-dismiss="offcanvas">
+                    Galeria de fotos
+                </div> -->
+          <!--  <div class="f_gruppo fs-4 py-2 border-light fw-semibold border-bottom"
+                    onclick="javascript:location.hash='regalos'" data-bs-dismiss="offcanvas">
+                    Mesa de regalso
+                </div> -->
+          <!--  <div class="f_gruppo fs-4 py-2 border-light fw-semibold border-bottom"
+                    onclick="javascript:location.hash='no'" data-bs-dismiss="offcanvas">
+                    No niÃ±os
+                </div> -->
+          <div
+            class="f_gruppo fs-4 py-2 border-light fw-semibold border-bottom"
+            onclick="javascript: location.hash = 'pases';"
+            data-bs-dismiss="offcanvas"
+          >
+            Mis pases
+          </div>
+          <div
+            class="f_gruppo fs-4 py-2 border-light fw-semibold border-bottom"
+            onclick="javascript: location.hash = 'buenos_deseos';"
+            data-bs-dismiss="offcanvas"
+          >
+            Buenos Deseos
+          </div>
+          <div
+            class="f_gruppo fs-4 py-2 border-light fw-semibold border-bottom"
+            onclick="javascript: location.hash = 'programa';"
+            data-bs-dismiss="offcanvas"
+          >
+            Itinerario
+          </div>
+
+          <div
+            class="f_gruppo fs-4 py-2 border-light fw-semibold border-bottom"
+            onclick="javascript: location.hash = 'confirmacion_whatsapp';"
+            data-bs-dismiss="offcanvas"
+          >
+            ConfirmaciÃ³n de asistencia
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- offcanvas ------------------fin---------- -->
+
+    <div
+      class="offcanvas offcanvas-start bg-black_ w-100"
+      style="background: #869eb8"
+      tabindex="-1"
+      id="canvas_fotos"
+      aria-labelledby="canvas_fotosLabel"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    >
+      <div class="offcanvas-header d-none">
+        <h5 class="offcanvas-title" id="canvas_fotosLabel"></h5>
+        <div
+          type="button"
+          class="btn-close_"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="bi bi-x-lg text-light fs-3"></i>
+        </div>
+      </div>
+      <div class="offcanvas-body p-0 position-relative overflow-hidden">
+        <div
+          class="position-absolute w-100 h-100 bg-info"
+          id="fondo_galeria"
+        ></div>
+        <div class="w-100 h-100 position-relative">
+          <div
+            type="button"
+            class="btn-close_ position-absolute end-0 top-0 p-4"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="bi bi-x-lg text-light fs-3"></i>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=80"
+            alt=""
+            class="object-fit-contain w-100 h-100"
+            id="foto_entera"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="offcanvas offcanvas-start bg-black_ w-100 show________________________"
+      style="background: #fffefe"
+      tabindex="-1"
+      id="canvas_deseos"
+      aria-labelledby="canvas_deseosLabel"
+    >
+      <div class="offcanvas-header d-none">
+        <h5 class="offcanvas-title" id="canvas_deseosLabel"></h5>
+        <div
+          type="button"
+          class="btn-close_"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <i class="bi bi-x-lg text-light fs-3"></i>
+        </div>
+      </div>
+      <div class="offcanvas-body p-0 position-relative overflow-hidden">
+        <div class="position-absolute w-100 h-100"></div>
+        <div class="w-100 h-100 position-relative">
+          <div
+            type="button"
+            class="btn-close_ position-absolute_ d-flex justify-content-end end-0 top-0 p-4"
+          >
+            <i
+              class="bi bi-x-lg color_1 fs-2"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></i>
+          </div>
+
+          <div class="px-3">
+            <label for="emisor" class="f_cormorant fs-6 fw-semibold">De:</label>
+            <input
+              type="text"
+              id="emisor"
+              class="form-control"
+              oninput="validar_boton_guardar()"
+            />
+            <label for="input_deseos" class="f_cormorant fs-6 fw-semibold mt-2"
+              >Escribe tu mensaje</label
+            >
+            <textarea
+              name=""
+              id="input_deseos"
+              rows="7"
+              class="form-control_ small f_cormorant_ w-100 rounded-2 border border-secondary p-2"
+              placeholder=""
+              oninput="validar_boton_guardar()"
+            ></textarea>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex gap-1 py-2">
+                <!-- <div class="border border-light shadow border-1 rounded-circle bg_0"
+                                style="width: 20px; height: 20px;" onclick="cambia_color('bg_0','color_2')"></div> -->
+                <div
+                  class="border border-light shadow border-1 rounded-circle bg_1"
+                  style="width: 20px; height: 20px"
+                  onclick="cambia_color('bg_1', 'color_2')"
+                ></div>
+                <div
+                  class="border border-light shadow border-1 rounded-circle bg_2"
+                  style="width: 20px; height: 20px"
+                  onclick="cambia_color('bg_2', 'color_4')"
+                ></div>
+                <!-- <div class="border border-light shadow border-1 rounded-circle bg_3"
+                                style="width: 20px; height: 20px;" onclick="cambia_color('bg_3','color_0')"></div> -->
+                <div
+                  class="border border-light shadow border-1 rounded-circle bg_0"
+                  style="width: 20px; height: 20px"
+                  onclick="cambia_color('bg_0', 'color_2')"
+                ></div>
+              </div>
+              <div
+                id="boton_guardar_deseos"
+                class="f_cormorant fs-6 px-3 rounded-pill btn btn-sm py-0 bg_4 color_2 disabled"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                onclick="agregar_deseo()"
+              >
+                Guardar
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio
+      id="audioPlayer"
+      src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/oGraveBater.mp3"
+      class="d-none"
+      loop
+    ></audio>
+    <div class="contenedor_padre over" id="padre_alfa">
+      <div
+        class="position-absolute top-0 start-0 w-100 p-3 d-none____________"
+        id="boton_menu"
+      >
+        <div
+          class="d-flex justify-content-between position-relative"
+          style="z-index: 50"
+        >
+          <div
+            class="rounded-circle d-flex justify-content-center align-items-center shadow-sm bg_4_"
+            onclick="play_pause(this)"
+            style="background: #eaebe8a9; width: 40px; height: 40px"
+          >
+            <i class="bi bi-music-note-beamed fs-1 text-light_ color_4"></i>
+          </div>
+          <div
+            class="rounded-circle d-flex justify-content-center align-items-center shadow-sm bg_0 d-none ___________"
+            style="background_: #4d049fa9; width: 40px; height: 40px"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#ofcanvas_menu"
+            aria-controls="ofcanvas_menu"
+          >
+            <i class="bi bi-list fs-1 text-light_ color_4"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="pantalla foto_1 overflow-hidden position-relative max-vh-100 h-100"
+        style="scroll-behavior: smooth"
+      >
+        <div
+          id="finger"
+          style="z-index: 100"
+          class="position-absolute vh-100 vw-100 bg-dark bg-opacity-10 top-0 start-0 justify-content-center align-items-center d-none"
+        >
+          <img
+            src="imagenes/img_195_20250512023833.png"
+            alt=""
+            style="width: 20%"
+            class="position-relative finger"
+          />
+          <div class="finger"></div>
+        </div>
+
+        <!--  <div class="position-absolute w-100 h-100 top-0 start-0 "> -->
+        <!--    <div class="position-absolute__ fixed-top w-100 vh-100 top-0 start-0 " style="z-index: 0;">
+                <video  muted loop class="mi_video" id="mi_video">
+                    <source src="NIKIS1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div> -->
+
+        <div
+          class="particulas_agregar particulas position-absolute_ fondo_1_ expandir overflow-hidden vh-100 w-100 fixed-bottom d-none_________"
+          style="z-index: 7 !important ; pointer-events: none"
+        >
+          <div
+            class="d-flex flex-column justify-content-between expandir position-relative overflow-hidden h-100 w-100"
+            style="pointer-events: none; z-index: 7"
+          >
+            <div
+              class="d-flex justify-content-between expandi position-relative"
+              style="pointer-events: none; z-index: 7"
+            >
+              <!--  <img src="img/globo_01.png" class="opacity-50" alt="" style="height: 35px;--i:21"> -->
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_150_20250504162422.png"
+                class="opacity-50"
+                alt=""
+                style="height: 10px; --i: 25"
+              />
+              <!--  <img src="img/globo_01.png" class="opacity-50" alt="" style="height: 35px;--i:17">
+                        <img src="img/globo_01.png" class="opacity-50" alt="" style="height: 20px;--i:14"> -->
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_150_20250504162422.png"
+                class="opacity-50"
+                alt=""
+                style="height: 25px; --i: 14"
+              />
+            </div>
+            <div
+              class="d-flex justify-content-evenly expandi position-relative"
+              style="pointer-events: none; z-index: 7"
+            >
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_150_20250504162422.png"
+                class="opacity-50"
+                alt=""
+                style="height: 20px; --i: 18"
+              />
+              <!--  <img src="img/globo_01.png" class="opacity-50" alt="" style="height: 30px;--i:16"> -->
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_150_20250504162422.png"
+                class="opacity-50"
+                alt=""
+                style="height: 10px; --i: 16"
+              />
+            </div>
+            <div
+              class="d-flex justify-content-evenly expandi position-relative"
+              style="pointer-events: none; z-index: 7"
+            >
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_150_20250504162422.png"
+                class="opacity-50"
+                alt=""
+                style="height: 10px; --i: 15"
+              />
+              <!--   <img src="img/globo_01.png" class="opacity-50" alt="" style="height: 30px;--i:22">
+                        <img src="img/globo_01.png" class="opacity-50" alt="" style="height: 35px;--i:19"> -->
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_150_20250504162422.png"
+                class="opacity-50"
+                alt=""
+                style="height: 15px; --i: 19"
+              />
+            </div>
+          </div>
+        </div>
+        <!--   -->
+        <div
+          class="h-100 overflow-hidden position-absolute w-100 top-0 start-0 sticky-top d-none________________"
+          style="z-index: 100"
+          id="seccion_0"
+        >
+          <div class="h-100 position-relative bg-dark bg-opacity-10">
+            <div
+              class="h-100 position-relative d-flex flex-column justify-content-center align-items-center"
+            >
+              <div
+                class="bg-white bg-opacity-25 position-absolute w-100 h-100"
+              ></div>
+              <div
+                class="bg-dark bg-opacity-25 position-absolute w-100 h-100"
+              ></div>
+              <div
+                class="fondo_sobre opaco__ mover_arriba___ position-absolute w-100 h-100"
+                id="sobre_base"
+              ></div>
+
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/inicio_izq.png"
+                alt=""
+                style="
+                  position: absolute;
+                  right: 0;
+                  top: 0;
+                  height: 100%;
+                  width: 70%;
+                "
+                class="mover_derecha___"
+                id="sobre_derecha"
+              />
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/inicio_der.png"
+                alt=""
+                style="
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  height: 100%;
+                  width: 70%;
+                "
+                class="rotate mover_izquierda___"
+                id="sobre_izquierda"
+              />
+
+              <div
+                style="width: 40%"
+                class="heart__ position-absolute mover_arriba___"
+                id="boton_iniciar"
+              >
+                <div class="ratio ratio-1x1 d-none___">
+                  <img
+                    loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/JyR_logo_gold.png"
+                    alt="Logo"
+                    class="object-fit-contain heart___ position-absolute w-100 h-100"
+                    style="cursor: pointer; z-index: 200;"
+                    onclick="ver_invitacion()"
+                  />
+                  <!--  <div
+                                    class="d-flex justify-content-center align-items-center bg-light heart rounded-circle fs_4 f_cormorant">
+                                    Abrir
+                                </div> -->
+
+                  <div
+                    id="dedo_abrir"
+                    class="d-none w-100 h-100"
+                    style="user-select: none !important"
+                    onclick="ver_invitacion()"
+                  >
+                    <img
+                      src="imagenes/img_194_20250512023833.png"
+                      alt=""
+                      class="heart_2 d-none__"
+                      style="
+                        width: 30%;
+                        height: auto;
+                        position: absolute;
+                        bottom: 0%;
+                        right: 0%;
+                      "
+                    />
+                  </div>
+
+                  <!-- <div class="d-flex justify-content-center align-items-center w-100 h-100">
+
+                                    <div class="f_cormorant fw-bold display-1 ts_2_p h-auto" style="color: #dbb450;">A & S</div>
+                                </div> -->
+                </div>
+
+                <div class="d-flex__ d-none justify-content-center">
+                  <div
+                    class="text-center bg_4 rounded-2 fw-bold px-3 py-1 text-white heart f_cormorant fs_5 mt-1"
+                    onclick="ver_invitacion()"
+                  >
+                    Abrir
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="position-absolute position-relative bottom-0 w-100 p-4 pb-5_ mover_arriba___ d-none ______"
+                style="padding-bottom: 30% !important"
+                id="para"
+              >
+                <div
+                  class="rounded-2 shadow-sm px-3 py-2 fondo_1_ text-light_ bg_2 color_0"
+                >
+                  <div class="f_cormorant text-light_ fs_3">Para:</div>
+                  <div
+                    class="f_cormorant text-light_ fs_2_5 border-bottom bc_1 lh-1 color_4"
+                  >
+                    <i> Nombre del invitadoNombre del invitado </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div id="aqui"></div> -->
+
+        <div
+          style="
+            min-height: 100vh;
+            height: 100vh;
+              background-size: cover;
+            background-position: center center;
+            padding: 45px 25px;
+          "
+          class="position-relative d-flex flex-column"
+        >
+          <!-- 
+ --color_0: #013b63;
+            --color_1: #898788;
+            --color_4: #202020;
+            --color_3: #bbd7e0;
+            --color_2: #EAEBE8;                
+-->
+
+          <!-- 0deg,#4e585398,#4e585398 -->
+
+          <!--  <div style="background: linear-gradient(0deg,#202020b6,#202020bb); height: 100%;"
+                    class="position-absolute top-0 start-0 h-25_ w-100"></div> -->
+          <!-- <div style="background: linear-gradient(0deg,#202020be,#20202000); height: 100%;"
+                    class="position-absolute top-0 start-0 h-25_ w-100"></div> -->
+
+          <!-- <div style="background: linear-gradient(180deg,#EAEBE800,#EAEBE8d8); height: 40%;"
+                    class="position-absolute bottom-0 start-0 h-25_ w-100"></div> -->
+
+          <div
+            class="h-100 bg-dark_ p-2_ bg-opacity-10_ position-relative"
+            style="background-color_: #013b635a"
+            id="inicio"
+          >
+            <div
+              class="h-100 bg-dark_ bg_4_ bg-opacity-25 position-relative border_ border-1 rounded-1 overflow-hidden bc_4 d-flex align-items-center sombra_papel"
+            >
+              <div
+                class="h-100 w-100 overflow-hidden sombra_papel_2 rounded-1"
+                style="
+                  position: absolute;
+                  top: 0%;
+                  left: 0%;
+                  background-size: contain;
+                  opacity: 1;
+                "
+              ></div>
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_148_20250504162422.png"
+                style="
+                  width: 75%;
+                  position: absolute;
+                  top: 00%;
+                  transform: translate(-45%, 0%) rotate(110deg);
+                  left: 0%;
+                  bottom: 35%;
+                  opacity: 100%;
+                "
+              />
+
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_148_20250504162422.png"
+                style="
+                  width: 65%;
+                  position: absolute;
+                  inset: auto 5% 10% auto;
+                  transform: translate(35%, 70%) rotate(110deg);
+                "
+              />
+
+              <!--  <div class="position-absolute bg_4" style="top: 0%; left: 2%; width: 3px; height: 50%;"></div>
+                        <div class="position-absolute bg_4"
+                            style="top: 0%; left:calc(2% + 2%); width: 3px; height: 40%;"></div>
+
+                        <div class="position-absolute bg_4" style="bottom: 0%; right: 2%; width: 3px; height: 50%;">
+                        </div>
+                        <div class="position-absolute bg_4"
+                            style="bottom: 0%; right:calc(2% + 2%); width: 3px; height: 40%;"></div> -->
+
+              <!--   <div class="position-absolute"
+                            style="transform: rotate(-120deg); opacity: 1; top: 28%; left: 0%;width: 15%;">
+                            <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' alt="" style="width: 100%;" class="elemento position-relative">
+                        </div> -->
+
+              <!-- 
+                        <img loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_143_20250504020855.png"
+                            style="width: 20%; position: absolute; top: 5%; right: 0%; transform: translate(-5%, 0%) rotate(300deg);">
+
+                        <img loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_140_20250504020855.png"
+                            style="width: 20%; position: absolute; left: 0%; bottom: 5%; transform: translate(15%, 0%) rotate(70deg); top: auto;"> -->
+
+              <div
+                class="text-center f_cormorant w-100 color_2"
+                style="bottom: 0%; font-size_: 7vh"
+              >
+                <!--    <div class="f_beiruti fs_3 elemento lh-1 ts_0"><span class="border-top_ border-bottom">
+                                    Nuestra Boda</span></div> -->
+                <div style="padding: 10%"></div>
+                <!--  <img src="img/logo_boda_03.png" alt="" style="width: 35%;" class="elemento">
+                            <div style="padding: 2%;"></div> -->
+                <div
+                  class="fs_3 f_cormorant color_4 d-flex___ d-none flex-column_ flex-wrap justify-content-start gap-2 lh-1 align-items-center fw-bold_ ts_1_ color_3_ ts_1_p_ elemento"
+                >
+                  <div class="" style="transform: translateY(-0%)">
+                    Josue Covarrubias Rodriguez
+                  </div>
+                  <div
+                    class="fs_4 f_parisienne"
+                    style="transform: translateY(0%)"
+                  >
+                    <span class="fs_2">&</span>
+                  </div>
+                  <!--  <i class="bi bi-heart-fill fs_2"></i>  -->
+                  <div
+                    class="d-flex align-items-center"
+                    style="transform: translateY(0%)"
+                  >
+                    Rebeca Taboada Maldonado
+                  </div>
+                </div>
+
+                <div class="text-start" style="padding: 0% 20%">
+                  <!-- <div class="fs_2 f_cormorant color_4 lh-sm fw-semibold_ elemento "
+                                    style="padding: 0% 0%;">
+                                    <i style="padding: 0% 0%;">
+
+                                        "El amor todo lo puede, todo lo cree, todo lo espera. Ãšnete a nuestra uniÃ³n bajo
+                                        el plan de Dios."
+                                    </i>
+                                </div> -->
+
+                  <div style="padding: 15% 0%"></div>
+
+                  <div class="f_cormorant fs_5 color_4 position-relative lh-sm">
+                    <div class="text-uppercase">Josue</div>
+                    <div class="fs_2">Covarrubias Rodriguez</div>
+                  </div>
+                  <div
+                    class="f_cormorant fs_4 color_4 position-relative lh-sm"
+                    style="padding: 6% 0%"
+                  >
+                    <div class="text-uppercase">&</div>
+                  </div>
+                  <div class="f_cormorant fs_5 color_4 position-relative lh-sm">
+                    <div class="text-uppercase">Rebeca</div>
+                    <div class="fs_2">Taboada Maldonado </div>
+                  </div>
+
+                  <div style="padding: 2%"></div>
+                  <!--   <div class="elemento position-relative" style="height: 60px; width: 50%;">
+                                    <div class="position-absolute_ h-100 bg_4 start-0 top-0 " style="width: 1px;"></div>
+                                </div> -->
+                  <div style="padding: 15%"></div>
+
+                  <div
+                    class="fs_2_5 f_cormorant color_4 lh-sm fw-semibold_ elemento"
+                    style="padding: 0% 0%"
+                  >
+                    <i style="padding: 0% 0%">
+                      "Nuestra eternidad comienza aquí"
+                    </i>
+                  </div>
+                </div>
+                <!--   <div
+                                class="f_playwrite_gb_s color_4 lh-1  d-flex align-items-center elemento justify-content-center fs_2 ">
+
+                                <div class="pe-3">Mayo</div>
+                                <div> 10, </div>
+                                <div class="ps-3"> 2025</div>
+
+                            </div> -->
+
+                <div style="padding: 5%"></div>
+                <div class="flecher">
+                  <i
+                    class="bi bi-chevron-down fs_5 color_4 heart_2 flecher_"
+                  ></i>
+                </div>
+
+                <!-- bn     -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="text-light fs_4 d-flex___ d-none flex-column justify-content-center align-items-center position-relative bg_2"
+        >
+          <div
+            class="px-4 fs_2_5 f_cormorant element text-center color_4 lh-sm w-100 bg_3"
+          >
+            <div style="padding: 2%"></div>
+            <div>
+              <i>
+                "El amor todo lo puede, todo lo cree, todo lo espera. Ãšnete a
+                nuestra uniÃ³n bajo el plan de Dios."
+              </i>
+            </div>
+
+            <div style="padding: 2%"></div>
+          </div>
+        </div>
+
+        <div
+          class="text-light fs_4 d-flex ___d-none flex-column justify-content-center align-items-center position-relative bg_3"
+          style="padding: 20px"
+        >
+          <div class="w-100 shadow bg_2" style="padding: 20px 20px 40px 20px">
+            <div
+              class="ratio ratio-1x1"
+              data-bg="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/foto_02.jpg" style=" background-size: cover"
+            ></div>
+          </div>
+        </div>
+
+        <div
+          style="
+            z-index: 5;
+            position: relative;
+            bottom: 0%;
+            transform: translateY(50%);
+          "
+          class="d-none"
+        >
+          <div
+            style="
+              background_____: linear-gradient(30deg, #4b1c71, #4b1c71);
+              transform: rotate(0deg);
+              z-index: 5;
+            "
+            class="bg-opacity-75 pt-1_ pb-2 rounded-3 bg_4 color_1 shadow-sm"
+            id="seccion_2"
+          >
+            <div
+              class="text-center px-4 py-2 text-light_ color_3 position-relative f_alex_brush_regular fw-semibold_ shadow_ elemento"
+            >
+              <div class="fs_2_5 color_0 f_cormorant">
+                "El amor es paciente y bondadoso. El amor no es envidioso. No es
+                presumido ni orgulloso. El amor no es descortÃ©s ni egoÃ­sta. No
+                se enoja fÃ¡cilmente. El amor no lleva cuenta de las ofensas."
+              </div>
+
+              <div
+                class="fs-5 fw-light mt-2 text-warning_ color_1 d-none ts_none f_adlam_display"
+              >
+                <i> 1 Corintios 13:4-5 </i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-light_ bg_2 h-100_ text-center d-flex _______d-none flex-column position-relative overflow-hidden rounded-2 shadow "
+          id="seccion_4"
+          style="
+            z-index: 2 !important;
+            margin: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+          "
+        >
+          <div class="position-absolute p-3 w-100 h-100 bg_2_ elemento_"></div>
+
+          <!--  <div style="background: linear-gradient(0deg,#00000000,#EAEBE8); height: 15%;"
+                    class="position-absolute top-0 start-0 h-25_ w-100"></div>
+                <div style="background: linear-gradient(0deg,#EAEBE8c5,#EAEBE8d0); height: 100%;"
+                    class="position-absolute top-0 start-0 h-25_ w-100"></div>
+                <div style="background: linear-gradient(180deg,#00000000,#EAEBE8); height: 15%;"
+                    class="position-absolute bottom-0 start-0 h-25_ w-100"></div> -->
+
+          <div
+            data-bg="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/fondo_blanco.jpg" style="background-size: cover; background-position: center center; "
+            class="position-relative p-2_ bg_0___"
+            id="padres"
+          >
+            <div
+              style="position: relative; z-index: 5000 !important"
+              class="h-100_ pb-5 px-3_ f_cormorant bg-light_ color_0 border_ border-1 bc_3"
+            >
+              <div
+                class="h-100 w-100 overflow-hidden"
+                style="
+                  position: absolute;
+                  top: 0%;
+                  left: 0%;
+                  background-size: cover;
+                  opacity: 1;"
+              ></div>
+
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_145_20250504022304.png"
+                style="
+                  width: 10%;
+                  position: absolute;
+                  top: 50%;
+                  left: 0%;
+                  transform: translate(0%, -50%) rotate(310deg);
+                "
+              />
+
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_146_20250504022304.png"
+                style="
+                  width: 20%;
+                  position: absolute;
+                  top: 35%;
+                  transform: translate(10%, -50%) rotate(125deg);
+                  right: 0%;
+                "
+              />
+
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_145_20250504022304.png"
+                style="
+                  width: 10%;
+                  position: absolute;
+                  bottom: 25%;
+                  right: 0%;
+                  transform: translate(0%, 0%) rotate(135deg);
+                  top: auto;
+                "
+              />
+
+              <div class="px-5_ py-5__" style="padding: 0% 5%">
+                <div style="padding: 10%"></div>
+
+                <div
+                  class="text-center fs_2 f_cormorant color_4 elemento"
+                  style="padding: 0% 10%"
+                >
+                  <i>Con la bendición de Dios y de nuestros padres</i>
+                </div>
+                <div style="padding: 4%"></div>
+
+                <div
+                  class="fs_2_5 f_beiruti elemento rounded-2 text-black-50 position-relative"
+                >
+                  <div class="position-relative p-0">Padres de la novia</div>
+                  <!--  <img src="img/corazon_01.png" alt=""
+                                style="height: 40%; position: absolute; left: 0%; top: 0%; transform: translate(-25%,-25%);">
+                            <img src="img/corazon_01.png" alt=""
+                                style="height: 40%; position: absolute; right: 0%; bottom: 0%; transform: translate(25%,25%);"> -->
+                </div>
+
+                <div style="padding: 2%"></div>
+                <div class="f_cormorant fs_2_5 color_4 fw-semibold__">
+                  <div class="padre elemento">
+                    Jorge Taboada<span class="f_cormorant_ d-none">(+)</span>
+                  </div>
+                  <div class="madre elemento">
+                    Amparo Maldonado<span class="d-none __">(+)</span>
+                  </div>
+                </div>
+
+                <div style="padding: 2%"></div>
+                <div
+                  class="fs_2_5 f_beiruti elemento rounded-2 text-black-50 position-relative"
+                >
+                  <div class="position-relative p-0">Padres del novio</div>
+                  <!--   <img src="img/corazon_01.png" alt=""
+                                style="height: 40%; position: absolute; left: 0%; top: 0%; transform: translate(-25%,-25%);">
+                            <img src="img/corazon_01.png" alt=""
+                                style="height: 40%; position: absolute; right: 0%; bottom: 0%; transform: translate(25%,25%);"> -->
+                </div>
+
+                <div style="padding: 2%"></div>
+                <div class="f_cormorant fs_2_5 color_4 fw-semibold__">
+                  <div class="padre elemento">
+                    Marco Covarrubias
+                    <span class="f_cormorant_ d-none ____">(+)</span>
+                  </div>
+                  <div class="madre elemento">Rocio Rodriguez</div>
+                </div>
+
+                <div style="padding: 5%"></div>
+                <div style="padding: 0% 10%">
+                  <div class="text-center fs_2 f_cormorant color_4 elemento">
+                    <i>
+                      Nos complace invitarles a compartir con nosotros nuestra
+                      ceremonia matrimonial.</i
+                    >
+                  </div>
+                </div>
+
+                <div style="padding: 4%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!--  <div class="position-absolute" style="top: 0%; transform: translateY(-95%); width: 100%; z-index: 100;">
+                    <img src="img/detalle_extremo_01.png" alt=""
+                        style="position: relative; bottom: 0%; transform: rotate(0deg); width: 100%;">
+                </div>
+                <div class="position-absolute"
+                    style="bottom: 0%; transform: translateY(95%); width: 100%; z-index: 100;">
+                    <img src="img/detalle_extremo_01.png" alt=""
+                        style="position: relative; bottom: 0%; transform: rotate(180deg); width: 100%;">
+                </div> -->
+        </div>
+
+        <!--   <div style="padding: 2%;" class="bg_3"></div> -->
+
+        <div
+          style="background___: #7f4ca5; z-index: 5; position: relative"
+          class="p-2 bg_4 d-none"
+        >
+          <div
+            style="
+              background_____: linear-gradient(30deg, #4b1c71, #4b1c71);
+              transform: rotate(0deg);
+              z-index: 5;
+            "
+            class="bg-opacity-75 pt-1_ pb-2 rounded-3 bg_4 color_1 shadow-sm"
+            id="seccion_2"
+          >
+            <div
+              class="text-center px-4 py-2 text-light_ color_3 position-relative f_alex_brush_regular fw-semibold_ shadow_ elemento"
+            >
+              <div class="fs_2_5 color_0 f_cormorant">
+                "En el jardÃ­n del amor, plantamos la semilla de nuestra uniÃ³n.
+                Que florezca y crezca con amor y felicidad eterna."
+              </div>
+
+              <div
+                class="fs-5 fw-light mt-2 text-warning_ color_1 d-none ts_none f_adlam_display"
+              >
+                <i> 1 Corintios 13:4-5 </i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="position-relative rounded-0 overflow-hidden"
+          data-bg="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/fondo_blanco.jpg" style="
+            padding: 0% 0% 0% 0%;
+            z-index: 5;
+            margin: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+            
+            background-size: cover;
+            background-position: center center;
+          "
+          id="cuando"
+        >
+          <div
+            class="h-100 w-100 overflow-hidden"
+            style="
+              position: absolute;
+              top: 0%;
+              left: 0%;
+              background-size: contain;
+              opacity: 1;
+            "
+          ></div>
+
+          <img
+            loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_148_20250504162422.png"
+            style="
+              width: 45%;
+              position: absolute;
+              transform: translate(-10%, 50%) rotate(310deg);
+              top: 0%;
+              left: 0%;
+            "
+          />
+          <img
+            loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_145_20250504022304.png"
+            style="
+              width: 10%;
+              position: absolute;
+              transform: translate(0%, 0%) rotate(135deg);
+              right: 0%;
+              top: 60%;
+            "
+          />
+          <img
+            loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_146_20250504022304.png"
+            style="
+              width: 15%;
+              position: absolute;
+              transform: translate(0%, 0%) rotate(225deg);
+              right: 0%;
+              top: 80%;
+              left: 0%;
+            "
+          />
+
+          <div
+            class="foto_2_ h-100_ sticky-top_ w-100 position-relative "
+            data-bg="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/fondo_blanco.jpg" style=" background-size: cover; background-position: center center;"
+          >
+            <div class="h-100 w-100 position-relative bg-light_ p-2_">
+              <div
+                style="
+                  background-size: cover;
+                  height: 100%;
+                "
+                class="position-absolute bg_4_ top-0 start-0 h-25_ w-100"
+              ></div>
+
+              <div
+                class="h-100_ w-100 d-flex flex-column justify-content-end align-items-start position-relative"
+              >
+                <!--   <div class="w-100 bor_top"></div>
+                <div class="w-100 bor_bottom"></div>
+                <div class="w-100 bor_end"></div>
+                <div class="w-100 bor_start"></div>
+                -->
+
+                <div class="py-5_ cuenta_regresiva w-100 position-relative">
+                  <div
+                    class="mt-5_ mx-3_ rounded-3 text-center text-light text_shadow_1_ f_gluten d-flex flex-column align-items-center position-relative"
+                  >
+                    <div style="padding: 10%"></div>
+                    <!-- <div class="text-center fs_2 f_cormorant color_4" style="padding: 0% 10%;">
+                                        <i> "El amor todo lo puede, todo lo cree, todo lo espera. Ãšnete a nuestra uniÃ³n bajo el plan de Dios."</i>
+                                    </div>
+                                  
+                                    <div style="padding: 5%"></div> -->
+                    <div
+                      class="fs_3 f_alex_brush_regular text-center color_4 _fw-semibold ts_2_"
+                    >
+                      ¡Nos Casamos!
+                    </div>
+                    <div style="padding: 5%"></div>
+
+                    <div style="width: 100%; padding: 0% 5%">
+                      <div
+                        class="d-flex align-items-center justify-content-center w-100"
+                      >
+                        <!--  <div style="width: 100%; height: 2px;" class="bg-light rounded-pill"></div> -->
+                        <div
+                          class="f_bodoni_moda color_4 fs_2 text-nowrap_ lh-sm fw-semibold_ ts_2_ text-uppercase"
+                          style="padding: 0% 3%"
+                        >
+                          Jueves 10 de Septiembre de 2026
+                        </div>
+                        <!--  <div style="width: 100%; height: 2px;" class="bg-light rounded-pill"></div> -->
+                      </div>
+                    </div>
+
+                    <div class="fs_2 f_bodoni_moda text-center color_4 ts_2_">
+                      7:00 pm
+                    </div>
+                    <div style="padding: 5%"></div>
+
+                    <div
+                      class="bg_4_ bg-light_ bg-gradient d-none___ text-white__ color_4 fs_1_ bc_2 pb-2 d-flex flex-column f_josefin justify-content-start rounded-1 gap- shadow__ bg_4_ bg-opacity-10 elemento"
+                      style="
+                        background-color_: #013b63;
+                        width: 45%;
+                        font-size: 1.5vh;
+                      "
+                    >
+                      <div
+                        class="row d-flex gap-2 justify-content-center m-0 p-0 g-0 fw-semibold border-bottom_ py-1 bg_2_ color_4"
+                      >
+                        <div class="col-1">D</div>
+                        <div class="col-1">L</div>
+                        <div class="col-1">M</div>
+                        <div class="col-1">M</div>
+                        <div class="col-1">J</div>
+                        <div class="col-1">V</div>
+                        <div class="col-1">S</div>
+                      </div>
+                      <div id="app_calendario" class="lh-sm"></div>
+                    </div>
+
+                    <div style="padding: 5%"></div>
+
+                    <!-- <div class="fs-4 f_amatic">Sabado  de Marzo 2024</div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  <div style="padding: 2%;" class="bg_4"></div>
+ -->
+
+        <div class="position-relative w-100 bg_0 bg-gradient color_2">
+          <div
+            class="h-100 w-100 overflow-hidden"
+            style="
+              position: absolute;
+              top: 0%;
+              left: 0%;
+              background-image__: none;
+              background-size: contain;
+              opacity: 1;
+            "
+          ></div>
+          <div style="padding: 2%"></div>
+
+          <div class="d-flex justify-content-center w-100">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+              alt=""
+              style="width: 8%"
+              class="elemento"
+            />
+          </div>
+
+          <div class="text-center f_alex_brush_regular fs_3 elemento">
+            Cuenta regresiva
+          </div>
+          <div style="padding: 2%"></div>
+          <div
+            class="row g-0 fs_3 f_libre_bodoni row-cols-4 justify-content-center text-black-50_ color_2 text-center text-truncate w-100 elemento"
+          >
+            <div class="p-1 bor position-relative">
+              <div class="fw-bold_" id="dias"></div>
+              <div class="text-truncate f_cormorant fs_2 px-1">Dias</div>
+            </div>
+            <div class="p-1 bor position-relative">
+              <div class="fw-bold_" id="horas"></div>
+              <div class="text-truncate f_cormorant fs_2 px-1">Horas</div>
+            </div>
+            <div class="p-1 bor position-relative">
+              <div class="fw-bold_" id="minutos"></div>
+              <div class="text-truncate f_cormorant fs_2 px-1">Minutos</div>
+            </div>
+            <div class="p-1">
+              <div class="fw-bold_" id="segundos"></div>
+              <div class="text-truncate f_cormorant fs_2 px-1">Segundos</div>
+            </div>
+          </div>
+          <div class="px-4 d-none evento_iniciado">
+            <div
+              class="w-100 py-3 rounded-1 shadow anima_giro_x"
+              style="background: linear-gradient(to bottom, #ffd700, #cd950c)"
+            >
+              El evento a empezadoÂ¡
+            </div>
+          </div>
+          <div style="padding: 5%"></div>
+        </div>
+
+        <!--   <div style="padding: 5%;"></div> -->
+
+        <!-- <div class="position-absolute sticky-top foto_2_ w-100 h-100 top-0" style="z-index: -0 !important;">
+            </div> -->
+        <!--<div class="position-absolute_ sticky-top foto_3_ w-100 h-100_ top-0"
+                style="z-index: 1 !important; background-image: url(img/foto_06.jpg); background-position: center right; background-size: cover;">
+                <div class="foto_2_ w-100 h-100 bg-dark bg-opacity-50"></div>
+            </div>
+            -->
+
+        <div
+          class="text-light fs_4 d-flex ___d-none flex-column justify-content-center align-items-center position-relative bg_3"
+          style="padding: 20px"
+        >
+          <div class="w-100 shadow bg_2" style="padding: 20px 20px 40px 20px">
+            <div
+              class="ratio ratio-1x1"
+              data-bg="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/foto_03.jpg" style=" background-size: cover"
+            ></div>
+          </div>
+        </div>
+
+        <div
+          style="background__: #202020; z-index: 5; position: relative"
+          class="bg_4 d-none _________________________"
+        >
+          <div
+            style="
+              background_: linear-gradient(30deg, #bbd7e0, #bbd7e0);
+              transform: rotate(-3deg);
+              z-index: 5;
+            "
+            class="bg-opacity-75 pt-1 pb-2"
+            id="seccion_2"
+          >
+            <div
+              class="text-center px-4 py-3 text-light display-4 position-relative f_gruppo fw-semibold_ shadow_ elemento"
+            >
+              <div class="fs-3 ts_1_ color_3 f_alex_brush_regular">
+                "El amor es como un fuego que arde sin cesar, imposible de
+                apagar. Ni las aguas mÃ¡s caudalosas pueden extinguirlo, ni los
+                vientos mÃ¡s fuertes pueden apagarlo."
+              </div>
+
+              <div class="fs-6 fw-light text-warning d-none">
+                <i> Santa Clara de AsÃ­s </i>
+              </div>
+            </div>
+
+
+        <div
+          class="position-relative rounded-0 overflow-hidden"
+          data-bg="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/fondo_blanco.jpg" style="
+            padding: 0% 0% 0% 0%;
+            z-index: 5;
+            margin-right: 20px;
+            margin-left: 20px;
+            
+            background-size: cover;
+            background-position: center center;
+          "
+        >
+          <div
+            class="d-flex flex-column justify-content-center align-items-center position-relative text-center"
+            id="donde"
+            style="z-index: 3 !important"
+          >
+            <!-- fondo textura xxxxxxxx -->
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                background-size: contain;
+                opacity: 1;
+              "
+            ></div>
+
+            <!--   <div class="position-absolute" style="top: 0%; transform: translateY(-95%); width: 100%; z-index: 100;">
+                    <img src="img/detalle_extremo_01.png" alt=""
+                        style="position: relative; bottom: 0%; transform: rotate(0deg); width: 100%;">
+                    </div> -->
+
+            <div style="padding: 10%"></div>
+
+            <div class="f_cormorant fs_3 lh-sm fw-semibold_ w-100 color_4_">
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_172_20250510031645.png"
+                alt=""
+                style="width: 10%"
+                class="elemento"
+              />
+              <div class="d-flex justify-content-center">
+                <div
+                  style="padding: 1% 5%"
+                  class="color_4 f_alex_brush_regular fs_3 text-nowrap elemento"
+                >
+                  Ubicación
+                </div>
+              </div>
+            </div>
+
+            <div style="padding: 1%"></div>
+
+            <div
+              class="f_alex_brush_regular fs_3 fw-semibold_ elemento rounded-2 bg_2_ color_4 lh-sm"
+              style="padding: 1% 2% 1% 2%"
+            >
+              <div
+                class="fs_2_5 f_cormorant text-uppercase border-bottom_border-top border-1 bc_4"
+              >
+                Salón Verde Manzana
+              </div>
+            </div>
+
+            <div style="padding: 1%"></div>
+
+            <div class="f_cormorant fs_2 color_4 lh-sm d-none_ elemento">
+              <div style="padding: 0% 15%" class="text-wrap text-center">
+                <i> Parque Urbano, Calle Capitán Mariano Arrien </i>
+              </div>
+              <div style="padding: 0% 10%"></div>
+            </div>
+
+            <div style="padding: 3%"></div>
+
+            <div
+              class="rounded-0 f_saira_semicondensed fw-semibold fs_2 bg_0 border_bc_4 color_4_ text-light border_ bc_4_ elemento heart shadow-sm text-nowrap lh-1"
+              style="padding: 3% 5% 2% 5%"
+            >
+              <a
+                class="text-decoration-none text-reset"
+                href="https://maps.app.goo.gl/CLGR896q6Lzppmec6"
+              >
+                <div>
+                  <i class="bi bi-geo-alt-fill pe-1"></i>
+                  <span>VER MAPA</span>
+                </div>
+              </a>
+            </div>
+
+            <div style="padding: 15%"></div>
+          </div>
+        </div>
+
+        <div style="padding: 3%" class="bg_3 position-relative"></div>
+
+        <div
+          id="no_meninos"
+          class="bg_0 position-relative shadow d-none___________________"
+          style="z-index: 3; padding: 0% 0% 0% 0%"
+        >
+          <!--  <div class="position-absolute" style="top: 0%; transform: translateY(-5%); width: 100%; z-index: 100;">
+                    <img src="img/detalle_extremo_02.png" alt=""
+                        style="position: relative; bottom: 0%; transform: rotate(180deg); width: 100%;">
+                </div> -->
+
+          <div
+            class="h-100 w-100 overflow-hidden"
+            style="
+              position: absolute;
+              top: 0%;
+              left: 0%;
+              
+              background-size: 2px;
+              opacity: 0.1;
+            "
+          ></div>
+          <div class="border_bc_4 bg_0 bg-gradient">
+            <div style="padding: 5%"></div>
+            <!-- <div class="d-flex justify-content-center">
+                        <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' style="width: 10%; opacity: 70%;" alt="">
+                    </div>
+                    <div style="padding: 2%;"></div> -->
+            <div class="color_2 text-center fs_3 f_cormorant px-4">
+              "Deseamos que vivan una experiencia especial sin preocupaciones, 
+              por lo que la celebración será solo para adultos."
+            </div>
+
+            <div style="padding: 5%"></div>
+          </div>
+          <!-- 
+                <div class="position-absolute"
+                    style="bottom: 0%; transform: translateY(5%); width: 100%; z-index: 100;">
+                    <img src="img/detalle_extremo_02.png" alt=""
+                        style="position: relative; bottom: 0%; transform: rotate(0deg); width: 100%;">
+                </div> -->
+        </div>
+
+        <div style="padding: 3%" class="bg_3 position-relative"></div>
+
+        <div
+          class="position-relative d-none ______ bg_4"
+          id="lluvia de sobres"
+          style="z-index: 5; padding: 0% 0% 0% 2%"
+        >
+          <div
+            class="bg_2 rounded-0 d-flex flex-column align-items-center shadow-sm position-relative overflow-hidden"
+          >
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                
+                background-size: 3px;
+                opacity: 0.1;
+              "
+            ></div>
+
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="position: absolute; top: 0%; left: 0%"
+            >
+              <div
+                class="position-absolute"
+                style="
+                  transform: rotate(-100deg);
+                  opacity: 1;
+                  top: 30%;
+                  left: -1%;
+                  width: 15%;
+                  z-index: 100;
+                "
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                  alt=""
+                  style="width: 100%"
+                  class="elemento position-relative"
+                />
+              </div>
+              <div
+                class="position-absolute"
+                style="
+                  transform: rotate(50deg);
+                  opacity: 0.5;
+                  top: 15%;
+                  right: -2%;
+                  width: 15%;
+                  z-index: 100;
+                "
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                  alt=""
+                  style="width: 100%"
+                  class="elemento position-relative"
+                />
+              </div>
+              <!--    <div class="position-absolute"
+                            style="transform: rotate(-20deg); opacity: .6; top: 60%; left: -2%;width: 15%; z-index: 100;">
+                            <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' alt="" style="width: 100%;" class="elemento position-relative">
+                        </div> -->
+            </div>
+
+            <div style="padding: 5%"></div>
+
+            <div class="f_cormorant fs_4 text-center color_4 elemento px-5">
+              <div class="bc_4 lh-sm">Lluvia de sobres</div>
+            </div>
+            <div style="padding: 3%"></div>
+            <div class="d-flex justify-content-center elemento">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                alt=""
+                style="width: 15%"
+              />
+            </div>
+            <div style="padding: 5%"></div>
+
+            <!-- <div class="f_cormorant fs_2 text-center color_2  elemento px-5 ">
+                        Si por alguna razÃ³n no puedes realizar una transferencia, Â¡no te preocupes! Tendremos la lluvia de
+                        sobres el dÃ­a del evento, donde podrÃ¡s hacer tu contribuciÃ³n de manera presencial. Â¡Esperamos contar
+                        con tu presencia y tu apoyo! Â¡Nos vemos pronto!
+                    </div> -->
+            <div
+              class="f_alex_brush_regular fs_2_5 text-center color_0 elemento px-5"
+            >
+              La lluvia de sobres es la tradiciÃ³n de regalar dinero en efectivo
+              a los novios en un sobre el dia del evento.
+            </div>
+            <div style="padding: 5%"></div>
+
+            <!--  <div class="d-flex justify-content-center mt-2 elemento f_cormorant">
+                        <a class="text-reset text-decoration-none" href="https://maps.app.goo.gl/kfZCDVFkKkf3m3pt6">
+                            <div class="px-3 py-2 rounded-2 text-light shadow bg_1  heart" style="background_: #A4A579">
+                                <i class="bi bi-geo-alt-fill pe-1 "></i> Ver Mapa
+                            </div>
+                        </a>
+                    </div>
+ -->
+
+            <!--        <div style="padding: 10%;"></div>
+                    <div class="w-100 border-bottom bc_4"></div>
+
+                    <div style="padding: 10%;"></div>
+                    <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' alt="" style="width:15%;" class="">
+                    <div style="padding: 2%;"></div>
+                    <div class="f_cormorant  fs_2 text-center color_4  elemento px-5 ">
+                        <div class=" bc_4">
+                            "En lugar de un regalo material, apreciarÃ­amos enormemente cualquier contribuciÃ³n que deseen
+                            realizar a travÃ©s de transferencia con QR. Su presencia en nuestra celebraciÃ³n ya es un
+                            regalo
+                            invaluable para nosotros."
+                        </div>
+                    </div>
+                    <div style="padding: 3%;"></div>
+
+
+                    <div class="w-100 d-flex justify-content-center" data-bs-toggle="offcanvas"
+                        data-bs-target="#canvas_fotos" aria-controls="canvas_fotos" onclick="mostrar_foto(this)">
+                        <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' alt="" style="width: 70%;" class="">
+                    </div>
+
+                    <div style="padding: 8%;"></div> -->
+          </div>
+        </div>
+
+        <div
+          class="position-relative d-none ______ bg_3"
+          id="mesa_regalos"
+          style="z-index: 5; padding: 3% 5%"
+        >
+          <div
+            class="bg_2 rounded-1 d-flex flex-column align-items-center shadow-sm position-relative overflow-hidden"
+          >
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                
+                background-size: 3px;
+                opacity: 0.1;
+              "
+            ></div>
+
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="position: absolute; top: 0%; left: 0%"
+            >
+              <div
+                class="position-absolute"
+                style="
+                  transform: rotate(-100deg);
+                  opacity: 1;
+                  top: 10%;
+                  left: -1%;
+                  width: 15%;
+                  z-index: 100;
+                "
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                  alt=""
+                  style="width: 100%"
+                  class="elemento position-relative"
+                />
+              </div>
+              <div
+                class="position-absolute"
+                style="
+                  transform: rotate(50deg);
+                  opacity: 0.5;
+                  top: 15%;
+                  right: -2%;
+                  width: 15%;
+                  z-index: 100;
+                "
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                  alt=""
+                  style="width: 100%"
+                  class="elemento position-relative"
+                />
+              </div>
+              <!--    <div class="position-absolute"
+                            style="transform: rotate(-20deg); opacity: .6; top: 60%; left: -2%;width: 15%; z-index: 100;">
+                            <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' alt="" style="width: 100%;" class="elemento position-relative">
+                        </div> -->
+            </div>
+
+            <div style="padding: 5%"></div>
+
+            <div class="f_cormorant fs_6 text-center color_4 elemento px-5">
+              <div class="bc_4">Regalos</div>
+            </div>
+            <div style="padding: 3%"></div>
+            <div class="f_cormorant fs_3 text-center color_1 elemento px-5 d-">
+              <div class="bc_4">
+                Si desean contribuir a nuestra nueva vida juntos, pueden hacerlo
+                escaneando el cÃ³digo QR
+              </div>
+            </div>
+            <div style="padding: 3%"></div>
+
+            <!--  <img src="img/QR-Josue-y-Rebeca.jpg" alt="" style="width: 80%;" class=""> -->
+
+            <div style="padding: 3%"></div>
+
+            <div class="f_cormorant fs_3 text-center color_1 elemento px-5 d-">
+              <div class="bc_4">Â¡Gracias por su amor y apoyo!</div>
+            </div>
+
+            <div style="padding: 5%"></div>
+
+            <div style="padding: 0% 5%" class="w-100">
+              <div class="w-100 border-top border-secondary"></div>
+            </div>
+
+            <div style="padding: 5%"></div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+              alt=""
+              style="width: 20%; opacity: 75%"
+            />
+            <div style="padding: 3%"></div>
+
+            <div class="f_cormorant fs_3 text-center color_1 elemento px-5 d-">
+              <div class="bc_4">
+                Sin embargo, si prefieren los regalos tradicionales, Â¡tambiÃ©n
+                serÃ¡n bienvenidos! Lo mÃ¡s importante para nosotros es celebrar
+                juntos este hermoso momento.
+              </div>
+            </div>
+            <div style="padding: 5%"></div>
+
+            <!--  <div class="d-flex justify-content-center mt-2 elemento f_cormorant">
+                        <a class="text-reset text-decoration-none" href="https://maps.app.goo.gl/kfZCDVFkKkf3m3pt6">
+                            <div class="px-3 py-2 rounded-2 text-light shadow bg_1  heart" style="background_: #A4A579">
+                                <i class="bi bi-geo-alt-fill pe-1 "></i> Ver Mapa
+                            </div>
+                        </a>
+                    </div>
+ -->
+
+            <!--        <div style="padding: 10%;"></div>
+                    <div class="w-100 border-bottom bc_4"></div>
+
+                    <div style="padding: 10%;"></div>
+                    <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' alt="" style="width:15%;" class="">
+                    <div style="padding: 2%;"></div>
+                    <div class="f_cormorant  fs_2 text-center color_4  elemento px-5 ">
+                        <div class=" bc_4">
+                            "En lugar de un regalo material, apreciarÃ­amos enormemente cualquier contribuciÃ³n que deseen
+                            realizar a travÃ©s de transferencia con QR. Su presencia en nuestra celebraciÃ³n ya es un
+                            regalo
+                            invaluable para nosotros."
+                        </div>
+                    </div>
+                    <div style="padding: 3%;"></div>
+
+
+                    <div class="w-100 d-flex justify-content-center" data-bs-toggle="offcanvas"
+                        data-bs-target="#canvas_fotos" aria-controls="canvas_fotos" onclick="mostrar_foto(this)">
+                        <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' alt="" style="width: 70%;" class="">
+                    </div>
+
+                    <div style="padding: 8%;"></div> -->
+          </div>
+        </div>
+
+        <!--  <div style="padding: 3%;" class="bg_4 position-relative"></div> -->
+
+        <div
+          id="codigo_vestimenta"
+          class="position-relative rounded-0 overflow-hidden"
+          data-bg="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/fondo_blanco.jpg" style="
+            padding: 0% 0% 0% 0%;
+            z-index: 5;
+            margin-right: 20px;
+            margin-left: 20px;
+            
+            background-size: cover;
+            background-position: center center;
+          "
+        >
+          <div
+            class="rounded-0 d-flex flex-column align-items-center position-relative overflow-hidden_"
+          >
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                background-size: contain;
+                opacity: 1;
+              "
+            ></div>
+
+            <div style="padding: 10%"></div>
+
+            <div
+              class="f_alex_brush_regular fw-bold_ fs_3 text-center color_4 lh-1 elemento px-5"
+            >
+              Código de Vestimenta
+            </div>
+            <div style="padding: 3%"></div>
+
+            <div class="f_cormorant fs_2 text-center color_4 elemento px-5">
+              <i>
+              Nos encantará verte lucir elegante en esta noche tan especial.
+              </i>
+            </div>
+
+            <div style="padding: 3%"></div>
+
+            <div
+              class="f_cormorant fw-bold fs_3 text-center color_0 bg_3_ elemento px-4"
+            >
+              Formal
+            </div>
+
+            <div style="padding: 5%"></div>
+
+            <div class="d-flex justify-content-center gap-5 elemento">
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_88_20250414194039.png"
+                alt=""
+                style="width: 20%"
+              />
+              <!--  <img src="img/vestido_01.png" alt="" style="width: 20%;"> -->
+            </div>
+            <div class="f_cormorant fs_2 text-center color_4 elemento px-5">
+              <i>
+                El vestido <b>Blanco</b> está reservado para la novia, y 
+                el traje color <b>Azul Marino</b> para el
+                novio.
+              </i>
+            </div>
+
+            <div style="padding: 5%"></div>
+          </div>
+        </div>
+
+        <div style="padding: 3%" class="bg_3 position-relative"></div>
+
+        <!-- <div style="padding: 3%;" class="bg_4 position-relative"></div> -->
+
+        <div
+          id="itinerario"
+          class="bg_3 position-relative rounded-0 overflow-hidden"
+          style="
+            padding: 0% 0% 0% 0%;
+            z-index: 5;
+            margin-right: 20px;
+            margin-left: 20px;
+          "
+        >
+          <div
+            class="bg_2 rounded-0 d-flex flex-column align-items-center shadow position-relative"
+            style="padding: 3% 10%"
+          >
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                background-size: contain;
+                opacity: 1;
+              "
+            ></div>
+
+            <img
+              loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_148_20250504162422.png"
+              style="
+                width: 75%;
+                position: absolute;
+                top: 00%;
+                transform: translate(-45%, 0%) rotate(110deg);
+                left: 0%;
+                bottom: 35%;
+                opacity: 50%;
+              "
+            />
+
+            <img
+              loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_148_20250504162422.png"
+              style="
+                width: 65%;
+                position: absolute;
+                inset: auto 5% 10% auto;
+                transform: translate(35%, 70%) rotate(110deg);
+              "
+            />
+
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="position: absolute; top: 0%; left: 0%"
+            >
+              <!--  <div class="position-absolute"
+                            style="transform: rotate(-50deg); opacity: 1; top: -3%; left: 5%;width: 15%; z-index: 100;">
+                            <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' alt="" style="width: 100%;" class="elemento position-relative">
+                        </div> -->
+              <div
+                class="position-absolute"
+                style="
+                  transform: rotate(140deg);
+                  opacity: 0.7;
+                  top: 10%;
+                  right: -2%;
+                  width: 12%;
+                  z-index: 100;
+                "
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                  alt=""
+                  style="width: 100%"
+                  class="elemento position-relative"
+                />
+              </div>
+            </div>
+
+            <div style="padding: 5%"></div>
+
+            <div
+              class="f_alex_brush_regular fs_3 fw-bold_ text-center color_4 px-5 elemento"
+            >
+              Itinerario
+            </div>
+            <div style="padding: 5%"></div>
+
+            <!-- 
+                    11 DE ENERO DE 2025
+                    4:00 pm  ->  Ceremonia Religiosa  -> Iglesia San Roque -> https://maps.app.goo.gl/qDd6ZLtyQdeE1y71A
+                    7:00 pm  ->  RecepciÃ³n Social  -> Salon Moped -> https://maps.app.goo.gl/H3f2WoiYN6rH6Jox5
+
+                    12 DE ENERO DE 2025
+                    11:00 am  ->  Misa de Salud  -> Iglesia San Roque
+                    6:00 pm  ->  Entrega de Regalos y Presentes  -> Salon Moped
+                    7:00 pm -> Fiesta Social
+                    -->
+            <!-- <div class="d-flex justify-content-center w-100 elemento">
+                        <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' alt="" style="width: 17%; transform: rotate(3deg);"
+                            class="">
+                    </div> -->
+
+            <!--    <div style="padding: 5%;"></div> -->
+
+            <div
+              class="border-start_ border-1 bc_4 position-relative w-100 d-none_________________"
+            >
+              <div
+                class="position-absolute h-100 bg_0 start-50 top-0 translate-middle-x"
+                style="width: 2px"
+              ></div>
+              <i
+                class="bi bi-heart-fill color_0 fs_1 position-absolute top-0 start-50 translate-middle"
+              ></i>
+              <i
+                class="bi bi-heart-fill color_0 fs_1 position-absolute top-100 start-50 translate-middle"
+              ></i>
+
+              <!--   <div class="elemento d-flex justify-content-start align-items-center w-100">
+                            <div class="border-bottom bc_4" style="width: 10%;"></div>
+                            <div class="w-100 bg-light_ bg_4 bg-opacity-10 d-flex justify-content-center align-items-center rounded-3 border bc_4"
+                                style=" padding: 2% 3% 2% 3%;">
+
+                                <div class="f_saira_semicondensed lh-1 fs_2_5 color_2 fw-semibold text-center"
+                                    style=" padding: 0% 3% 0% 3%;">Ceremonia Religiosa</div>
+                            </div>
+                        </div> -->
+
+              <!-- <div style="padding: 5%;"></div> -->
+
+              <div id="app_ceremonia_religiosa"></div>
+
+              <!--   <div style="padding: 5%;"></div>
+                        <div class="elemento d-flex justify-content-start align-items-center w-100">
+                            <div class="border-bottom bc_4" style="width: 10%;"></div>
+                            <div class="w-100 bg-light_ bg_4 bg-opacity-10 d-flex justify-content-center align-items-center rounded-3 border bc_4"
+                                style=" padding: 2% 3% 2% 3%;">
+
+                                <div class="f_saira_semicondensed lh-1 fs_2_5 color_2 fw-semibold text-center"
+                                    style=" padding: 0% 3% 0% 3%;">Fiesta</div>
+                            </div>
+                        </div>
+                        <div style="padding: 5%;"></div> -->
+              <div id="app_fiesta"></div>
+            </div>
+
+            <div style="padding: 10%"></div>
+          </div>
+        </div>
+
+        <div
+          class="text-light fs_4 d-flex ___d-none flex-column justify-content-center align-items-center position-relative bg_3"
+          style="padding: 20px"
+        >
+          <div class="w-100 shadow bg_2" style="padding: 20px 20px 40px 20px">
+            <div
+              class="ratio ratio-1x1"
+              data-bg="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/foto_04.jpg" style=" background-size: cover"
+            ></div>
+          </div>
+        </div>
+
+        <div style="padding: 3%" class="bg_3 position-relative"></div>
+        <div
+          id="pases"
+          class="bg_3 position-relative rounded-0 overflow-hidden d-none ___________"
+          style="
+            padding: 0% 0% 0% 0%;
+            z-index: 5;
+            margin-right: 20px;
+            margin-left: 20px;
+          "
+        >
+          <div
+            class="bg_2 rounded-0 d-flex flex-column align-items-center position-relative"
+          >
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                background-size: contain;
+                opacity: 1;
+              "
+            ></div>
+
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="position: absolute; top: 0%; left: 0%"
+            >
+              <!--   <div class="position-absolute"
+            style="transform: rotate(-50deg); opacity: 1; top: -3%; left: 5%;width: 15%; z-index: 100;">
+            <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' alt="" style="width: 100%;" class="elemento position-relative">
+        </div>
+        <div class="position-absolute"
+            style="transform: rotate(120deg); opacity: .7; top: 2%; right: -2%;width: 15%; z-index: 100;">
+            <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' alt="" style="width: 100%;" class="elemento position-relative">
+        </div>
+        <div class="position-absolute"
+            style="transform: rotate(-20deg); opacity: .6; top: 60%; left: -2%;width: 15%; z-index: 100;">
+            <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' alt="" style="width: 100%;" class="elemento position-relative">
+        </div> -->
+            </div>
+
+            <div style="padding: 5%"></div>
+
+            <div
+              class="color_4 f_alex_brush_regular fs_3 fw-semibold text-center elemento"
+            >
+              Pases
+            </div>
+            <div style="padding: 3%"></div>
+
+            <div style="width: 12%">
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_191_20250512020540.png"
+                alt=""
+                style="width: 100%; transform: rotate(-45deg); opacity: 1"
+              />
+            </div>
+            <div style="padding: 7%"></div>
+
+            <div
+              class="f_cormorant fw-bold_ fs_3 text-center color_0 elemento px-3 w-100"
+            >
+              <div
+                class="border-bottom_border-top bc_4 w-100 fs_2_5 f_cormorant text-uppercase"
+              >
+                Nombre del invitado <span> Nombre del invitado </span>
+              </div>
+            </div>
+            <div style="padding: 3%"></div>
+
+            <div
+              class="d-flex flex-column justify-content-center align-items-center gap-3 position-relative"
+            >
+              <div>
+                <div
+                  class="f_cormorant fs_2 text-center color_1 fw-semibold_ elemento"
+                >
+                  Hemos reservado
+                </div>
+                <div style="padding: 1%"></div>
+
+                <div class="d-flex gap-2 color_4">
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle-fill fs_2"></i>
+                    <span> 11 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 22 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 23 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 24 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 25 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 26 </span>
+                  </div>
+
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 32 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 33 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 34 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 35 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 36 </span>
+                  </div>
+
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 42 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 43 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 44 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 45 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 46 </span>
+                  </div>
+
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 52 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 53 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 54 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 55 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 56 </span>
+                  </div>
+
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 62 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 63 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 64 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 65 </span>
+                  </div>
+                  <div class="d-flex flex-column align-items-center lh-sm">
+                    <i class="bi bi-circle fs_2"></i>
+                    <span> 66 </span>
+                  </div>
+                </div>
+                <div style="padding: 1%"></div>
+                <div class="f_cormorant fs_2 text-center color_1 elemento">
+                  lugares en su honor
+                </div>
+              </div>
+            </div>
+
+            <div style="padding: 3%"></div>
+          </div>
+        </div>
+
+        <!--  <div style="padding: 3%;" class="bg_4 position-relative"></div> -->
+
+        <div
+          id="confirmacion"
+          class="bg_3 position-relative rounded-0 overflow-hidden"
+          style="
+            padding: 0% 0% 0% 0%;
+            z-index: 5;
+            margin-right: 20px;
+            margin-left: 20px;
+          "
+        >
+          <div
+            class="bg_2 rounded-0 d-flex flex-column align-items-center position-relative"
+          >
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                background-size: contain;
+                opacity: 1;
+              "
+            ></div>
+
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="position: absolute; top: 0%; left: 0%"
+            >
+              <div
+                class="position-absolute"
+                style="
+                  transform: rotate(-130deg);
+                  opacity: 0.8;
+                  top: 8%;
+                  left: 0%;
+                  width: 10%;
+                  z-index: 100;
+                "
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                  alt=""
+                  style="width: 100%"
+                  class="elemento position-relative"
+                />
+              </div>
+              <div
+                class="position-absolute"
+                style="
+                  transform: rotate(120deg);
+                  opacity: 0.7;
+                  top: 3%;
+                  right: -2%;
+                  width: 15%;
+                  z-index: 100;
+                "
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                  alt=""
+                  style="width: 100%"
+                  class="elemento position-relative"
+                />
+              </div>
+            </div>
+
+            <div style="padding: 10%"></div>
+            <!-- <i class="bi bi-whatsapp fs_3 color_4 elemento"></i> -->
+            <div
+              class="f_alex_brush_regular fw-bold_ fs_3 lh-1 text-center color_4 elemento px-5"
+            >
+              Confirmación de Asistencia
+            </div>
+
+            <div style="padding: 3%"></div>
+
+            <div class="f_cormorant fs_2 text-center color_4 elemento px-5">
+              <i>
+                Deseamos que nuestra boda sea un sueño hecho realidad, y su
+                presencia hará que sea aún más especial.
+              </i>
+            </div>
+
+            <div style="padding: 2%"></div>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+              <!-- <div class="btn btn-sm border-0 fs_2_5 bg_0 shadow color_2 text-light_ rounded-0 f_cormorant heart"
+                            style="" onclick="abrirWhatsApp('59169153601')">
+                             Confirmar
+                        </div> -->
+              <a
+                class="btn btn-sm border-0 fs_2_5 bg_0 shadow color_2 text-light_ rounded-0 f_cormorant heart"
+                style=""
+                href="https://forms.gle/q7dTW2rLuKQmARTN8"
+              >
+                Confirmar
+              </a>
+            </div>
+
+            <div style="padding: 7%"></div>
+          </div>
+        </div>
+
+        <div style="padding: 3%" class="bg_3 position-relative"></div>
+
+        <!--  <div style="padding: 3%;" class="bg_4 position-relative"></div> -->
+
+        <div
+          id="555555555555555"
+          class="bg_3 position-relative rounded-0 overflow-hidden"
+          style="
+            padding: 0% 0% 0% 0%;
+            z-index: 5;
+            margin-right: 20px;
+            margin-left: 20px;
+          "
+        >
+          <div
+            class="bg_2 rounded-0 d-flex flex-column align-items-center position-relative"
+          >
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                background-size: contain;
+                opacity: 1;
+              "
+            ></div>
+
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="position: absolute; top: 0%; left: 0%"
+            >
+              <div
+                class="position-absolute"
+                style="
+                  transform: rotate(-130deg);
+                  opacity: 0.8;
+                  top: 8%;
+                  left: 0%;
+                  width: 10%;
+                  z-index: 100;
+                "
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                  alt=""
+                  style="width: 100%"
+                  class="elemento position-relative"
+                />
+              </div>
+              <div
+                class="position-absolute"
+                style="
+                  transform: rotate(120deg);
+                  opacity: 0.7;
+                  top: 3%;
+                  right: -2%;
+                  width: 15%;
+                  z-index: 100;
+                "
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                  alt=""
+                  style="width: 100%"
+                  class="elemento position-relative"
+                />
+              </div>
+            </div>
+
+            <div style="padding: 10%"></div>
+
+            <div
+              class="f_alex_brush_regular fw-bold_ fs_3 lh-1 text-center color_4 elemento px-5"
+            >
+              Regalo
+            </div>
+
+            <div style="padding: 3%"></div>
+
+            <div class="f_cormorant fs_2 text-center color_4 elemento px-5">
+              <i>
+               "Nuestro hogar ya está completo, pero nuestra aventura apenas 
+               comienza. Su presencia es lo más importante, pero si desean contribuir con 
+               un detalle, agradeceremos infinitamente su aporte 
+               en efectivo o transferencia para seguir construyendo nuestro futuro juntos."
+              </i>
+            </div>
+
+            <div style="padding: 5%"></div>
+
+            <!-- <div style="padding: 2%;"></div>
+                    <div class="f_alex_brush_regular fs_4 text-center color_1  elemento px-5 ">
+                        Mesa de Regalos
+                    </div>
+                    <div style="padding: 1%;"></div>
+                    <div class="f_cormorant fs_2_5 text-center color_1  elemento px-5 ">
+                        Pueden explorar y seleccionar un regalo en nuestra Mesa de regalos:
+                    </div>
+
+                    <div style="padding: 2%;"></div>
+                    <img loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_164_20250505200221.png"
+                        alt="" style="width: 60%;" class="elemento">
+                    <div style="padding: 2%;"></div>
+
+
+                   
+                    <div style="padding: 1%;"></div>
+                    <div class="d-flex justify-content-center gap-3 mt-3 f_beiruti fw-semibold w-100">
+
+                        <div class=" fs_3 bg_4  color_2 text-light_ rounded-0 f_beiruti heart  d-flex align-items-end border  bc_4 lh-1 gap-2"
+                            style="padding: 1% 5% 1% 5%;" onclick="abrirWhatsApp_mesa_regalos(69000200)">
+                            <div class="bi bi-whatsapp color_2 pe-1"></div>
+                            <div>Chatear</div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div style="padding: 7%;"></div>
+
+
+                    <div style="padding: 2%;"></div>
+                    <div class="f_alex_brush_regular fs_4 text-center color_1  elemento px-5 ">
+                        Transferencia
+                    </div>
+
+                    <div style="padding: 2%;"></div> -->
+            <!--   <div class="f_cormorant fs_2_5 text-center color_1  elemento px-5 ">
+                        La presencia es obligatoria, el regalo es opcional
+                    </div> -->
+
+            <div
+              class="d-flex flex-column align-items-center elemento_ position-relative gap-4"
+              style="z-index: 10000 !important"
+            >
+              <div class="text-center w-100">
+                  <div class="f_beiruti fs_3 fw-bold color_4 mb-2">QR Bolivia</div>
+                  <img
+                    src="https://placehold.co/400x400/EAEBE8/202020?text=QR+Bolivia"
+                    alt="QR Bolivia Placeholder"
+                    style="width: 60%; max-width: 200px;"
+                    class="rounded-3 shadow-sm"
+                  />
+              </div>
+              
+              <div class="text-center w-100">
+                  <div class="f_beiruti fs_3 fw-bold color_4 mb-2">QR Binance</div>
+                  <img
+                    src="https://placehold.co/400x400/EAEBE8/202020?text=QR+Binance"
+                    alt="QR Binance Placeholder"
+                    style="width: 60%; max-width: 200px;"
+                    class="rounded-3 shadow-sm"
+                  />
+              </div>
+            </div>
+
+            <div style="padding: 7%"></div>
+          </div>
+        </div>
+
+        <div style="padding: 3%" class="bg_3 position-relative"></div>
+
+        <div
+          class="bg_3 position-relative rounded-0 overflow-hidden"
+          style="
+            padding: 0% 0% 0% 0%;
+            z-index: 5;
+            margin-right: 20px;
+            margin-left: 20px;
+          "
+        >
+          <div
+            class="d-flex flex-column justify-content-center align-items-center position-relative bg_2 text-center"
+            id="donde_iglesia"
+            style="z-index: 3 !important"
+          >
+            <!-- fondo textura xxxxxxxx -->
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                background-size: contain;
+                opacity: 1;
+              "
+            ></div>
+
+            <!--   <div class="position-absolute" style="top: 0%; transform: translateY(-95%); width: 100%; z-index: 100;">
+                    <img src="img/detalle_extremo_01.png" alt=""
+                        style="position: relative; bottom: 0%; transform: rotate(0deg); width: 100%;">
+                    </div> -->
+
+            <div style="padding: 10%"></div>
+
+            <div class="f_cormorant fs_3 lh-sm fw-semibold_ w-100 color_4_">
+              <img
+                loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_172_20250510031645.png"
+                alt=""
+                style="width: 10%"
+                class="elemento"
+              />
+              <div class="d-flex justify-content-center">
+                <div
+                  style="padding: 1% 5%"
+                  class="color_4 f_alex_brush_regular fs_3 text-nowrap elemento"
+                >
+                  Ceremonia Religiosa
+                </div>
+              </div>
+            </div>
+
+            <div style="padding: 2%"></div>
+
+            <div class="f_cormorant fs_2 color_4 lh-sm d-none_ elemento">
+              <div style="padding: 0% 15%" class="text-wrap text-center">
+                <i>
+                  Asi mismo les invitamos a nuestra ceremonia religiosa que se
+                  llevara a cabo el:
+                </i>
+              </div>
+              <div style="padding: 0% 10%"></div>
+            </div>
+
+            <div style="padding: 2%"></div>
+
+            <div
+              class="f_beiruti text-uppercase fs_2 color_4 lh-sm d-none_ elemento w-100"
+            >
+              <div style="padding: 0% 10%" class="text-nowrap text-center fs_3">
+                Sábado 12 de Septiembre
+              </div>
+              <div style="padding: 0% 10%"></div>
+            </div>
+
+            <div style="padding: 1%"></div>
+
+            <div style="width: 40%">
+              <div
+                class="ratio ratio-1x1 rounded-circle "
+                data-bg="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/templo.jpg" style=" background-size: cover; background-position: center;"
+              ></div>
+            </div>
+
+            <div
+              class="f_alex_brush_regular fs_3 fw-semibold_ elemento rounded-2 bg_2_ color_4 lh-sm"
+              style="padding: 1% 5% 1% 5%"
+            >
+              <div
+                class="fs_2_5 py-2 f_cormorant text-uppercase border-bottom_border-top border-1 bc_4"
+              >
+                Templo de La Iglesia de Jesucristo de los Santos de los Últimos
+                Días
+              </div>
+            </div>
+
+            <div style="padding: 3%"></div>
+
+            <div
+              class="f_cormorant fs_2_5 color_4 lh-sm d-none_ elemento w-100"
+            >
+              <div style="padding: 0% 15%" class="text-nowrap text-center">
+                <i> Cochabamba - Bolivia </i>
+              </div>
+              <div style="padding: 0% 10%"></div>
+            </div>
+
+            <div style="padding: 3%"></div>
+
+            <!-- <div class="rounded-0 f_saira_semicondensed fw-semibold fs_2 bg_0 border_bc_4 color_4_ text-light border_ bc_4_ elemento heart shadow-sm text-nowrap lh-1"
+                        style="padding: 3% 5% 2% 5%;">
+                        <a class="text-decoration-none text-reset" href="https://maps.app.goo.gl/TfqznjojqZc4R2Mb8">
+                            <div>
+                                <i class="bi bi-geo-alt-fill pe-1"></i>
+                                <span>VER MAPA</span>
+                            </div>
+                        </a>
+                    </div> -->
+
+            <div style="padding: 5%"></div>
+          </div>
+        </div>
+
+        <div style="padding: 3%" class="bg_3 position-relative"></div>
+
+        <!-- <div class="position-relative  bg_1" id="buenos_deseos" style="z-index: 5; padding: 8% 8%; "> -->
+        <div
+          id="buenos_deseos"
+          class="bg_3 position-relative rounded-0 overflow-hidden"
+          style="
+            padding: 0% 0% 0% 0%;
+            z-index: 5;
+            margin-right: 20px;
+            margin-left: 20px;
+          "
+        >
+          <div
+            class="bg_2 d-flex flex-column align-items-center shadow-sm_ position-relative"
+          >
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                background-size: contain;
+                opacity: 1;
+              "
+            ></div>
+
+            <img
+              loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_148_20250504162422.png"
+              style="
+                width: 75%;
+                position: absolute;
+                top: 10%;
+                transform: translate(-45%, 0%) rotate(110deg);
+                left: 0%;
+                bottom: 35%;
+                opacity: 50%;
+              "
+            />
+
+            <img
+              loading="lazy" src="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_148_20250504162422.png"
+              style="
+                width: 65%;
+                position: absolute;
+                inset: auto 5% 10% auto;
+                transform: translate(35%, 70%) rotate(110deg);
+              "
+            />
+
+            <div style="padding: 5%"></div>
+
+            <div id="buenos_deseos___" class="position-relative w-100">
+              <div class="w-100">
+                <div
+                  class="f_alex_brush_regular fw-bold_ color_4 text-center px-4 fs_3 lh-sm"
+                >
+                  Buenos Deseos
+                </div>
+
+                <div
+                  class="f_cormorant text-secondary text-center"
+                  style="font-size: 3vh"
+                ></div>
+
+                <div class="position-relative pt-4 w-100">
+                  <div
+                    class="position-absolute w-100 d-flex justify-content-evenly"
+                  >
+                    <div
+                      style="width: 25px; height: 25px"
+                      onclick="mover_izquierda()"
+                      class="rounded-circle shadow bg-light bg-opacity-50 d-flex justify-content-center align-items-center"
+                    >
+                      <i class="bi bi-chevron-left"></i>
+                    </div>
+                    <div
+                      style="width: 25px; height: 25px"
+                      onclick="mover_derecha()"
+                      class="rounded-circle shadow bg-light bg-opacity-50 d-flex justify-content-center align-items-center"
+                    >
+                      <i class="bi bi-chevron-right"></i>
+                    </div>
+                  </div>
+                  <div
+                    id="app_deseos"
+                    class="p-4 d-flex flex-column_ min-min-vw-100 align-items-center justify-content-start flex-wrap_ gap-2 overflow-auto"
+                    style="max-height: 300px; scroll-behavior: smooth"
+                  >
+                    <!-- Los mensajes dinámicos desde PocketBase se insertarán aquí -->
+                  </div>
+
+                  <div class="d-flex justify-content-center gap-3 mt-4">
+                    <div
+                      class="btn btn-sm rounded-0 border-0 fs_2_5 color_4 text-light_ f_cormorant heart bg_3"
+                      style="background_: #869eb8"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#canvas_deseos"
+                      aria-controls="canvas_deseos"
+                    >
+                      <!-- <i class="bi bi-pencil fs-5"></i> -->
+                      Escribir un deseo
+                    </div>
+                  </div>
+                  <div style="padding: 5%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- aqui va el modal de 'MOSTRAR MAS' de la seccion de buenos deseos -->
+
+            <div style="padding: 3%"></div>
+          </div>
+        </div>
+
+        <!--  <div style="padding: 3%;" class="bg_4 position-relative"></div> -->
+        <!-- <div style="padding: 3%;" class="bg_4 position-relative"></div> -->
+
+        <div
+          class="position-relative shadow d-none_____________ bg_4"
+          id="galeria"
+          style="z-index: 5; padding: 0% 0% 0% 0%; margin: 20px"
+        >
+          <div
+            class="bg_2 rounded-0 d-flex flex-column align-items-center position-relative"
+          >
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                background-size: contain;
+                opacity: 1;
+              "
+            ></div>
+
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                
+                background-size: 3px;
+                opacity: 0.1;
+              "
+            ></div>
+
+            <div
+              class="h-100 w-100 overflow-hidden"
+              style="position: absolute; top: 0%; left: 0%"
+            >
+              <div
+                class="position-absolute"
+                style="
+                  transform: rotate(-130deg);
+                  opacity: 0.8;
+                  top: 8%;
+                  left: 0%;
+                  width: 10%;
+                  z-index: 100;
+                "
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                  alt=""
+                  style="width: 100%"
+                  class="elemento position-relative"
+                />
+              </div>
+              <div
+                class="position-absolute"
+                style="
+                  transform: rotate(120deg);
+                  opacity: 0.7;
+                  top: 3%;
+                  right: -2%;
+                  width: 15%;
+                  z-index: 100;
+                "
+              >
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                  alt=""
+                  style="width: 100%"
+                  class="elemento position-relative"
+                />
+              </div>
+            </div>
+
+            <div style="padding: 5%"></div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+              style="width: 12%"
+              alt=""
+            />
+            <!--  <div class="f_cormorant fw-bold_ fs_4 lh-1 text-center color_4  elemento px-5 ">
+                        Galeria de Fotos
+                    </div> -->
+
+            <div
+              class="f_cormorant fs_2_5 text-center color_1 elemento px-5 lh-sm"
+            >
+              <i
+                >"Un suspiro, un destello, un recuerdo que perdura en la
+                memoria."</i
+              >
+            </div>
+
+            <div style="padding: 0%"></div>
+            <div class="position-relative w-100">
+              <div
+                id="app_galeria"
+                class="galeria position-relative w-100 py-4 px-4_ row flex-nowrap __ elemento_ gap-0 g-2 m-0 justify-content-start overflow-auto _ px-1 d-none_________________________"
+              ></div>
+              <div
+                class="position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-between align-items-center m-0"
+                style="
+                  z-index: 13 !important;
+                  padding: 0% 3%;
+                  pointer-events: none !important;
+                "
+              >
+                <div
+                  class="rounded-pill bg-dark bg-opacity-25 position-relative"
+                  style="padding: 1% 2%; pointer-events: all"
+                >
+                  <i
+                    class="bi bi-chevron-left fs_2_5 color_2 ts_0"
+                    onclick="mover_scroll_x(-200, 'app_galeria')"
+                  ></i>
+                </div>
+
+                <div
+                  class="rounded-pill bg-dark bg-opacity-25 position-relative"
+                  style="padding: 1% 2%; pointer-events: all"
+                >
+                  <i
+                    class="bi bi-chevron-right fs_2_5 color_2 ts_0"
+                    onclick="mover_scroll_x(200, 'app_galeria')"
+                  ></i>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding: 5%"></div>
+
+            <div style="padding: 1%"></div>
+          </div>
+        </div>
+
+        <!--   <div style="padding: 3%;" class="bg_3 position-relative"></div> -->
+
+        <!--  <div id="aqui"></div> -->
+        <!--   <div class="fs_3 f_cormorant fw-semibold_ bg_3 color_4 text-center" style="padding: 3% 7%;">
+                <i>
+
+                    "Tu presencia harÃ¡ que este dÃ­a especial sea aÃºn mÃ¡s inolvidable"
+                </i>
+            </div> -->
+
+        <div style="padding: 25px" class="bg_3">
+          <div
+            class="position-relative bg-light rounded-3 overflow-hidden d-none_______ w-100 sombra_papel"
+            style="z-index_: 10"
+            id="fin"
+          >
+            <!--  <div class="position-absolute h-100 w-100  top-0 start-0"
+                    style="background: linear-gradient(0deg,#000000,#2c724709);">
+                </div> -->
+
+            <div
+              class="h-100 w-100 overflow-hidden sombra_papel_2"
+              style="
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                background-size: contain;
+                opacity: 1;
+              "
+            ></div>
+
+            <div style="padding: 0%"></div>
+
+            <div
+              class="text-center f_cormorant w-100 color_2"
+              style="bottom: 0%; font-size_: 7vh"
+            >
+              <div style="padding: 5%"></div>
+
+              <!--   <div
+                        class="f_beiruti text-white  d-flex align-items-center justify-content-center fs_2_5 elemento ">
+                        <div class="px-4 border-bottom"></div>
+                        <div class="ps-3">09</div>
+                        <div>.11.</div>
+                        <div class="pe-3">2024</div>
+                        <div class="px-4 border-bottom"></div>
+                    </div> -->
+
+              <!--  <div
+                        class="fs_7 f_qwitcher_grypen_regular fw-bold_ ts_0 color_3_ text-white elemento d-flex flex-column lh-sm align-items-center justify-content-center gap-0">
+                        <div class="">Josue</div>
+                        <div class="fs_4">&</div>
+                        <div> <span class="">Rebeca</span> </div>
+                    </div> -->
+
+              <div class="f_cormorant fs_2 color_4 position-relative px-5">
+                <i>
+                  "Tu presencia hará que este día especial sea aún más
+                  inolvidable"</i
+                >
+              </div>
+
+              <div style="padding: 5%"></div>
+              <div
+                class="fs_3 f_cormorant color_4 d-flex flex-column_ flex-wrap justify-content-center gap-2 lh-1 align-items-center fw-bold_ ts_1_ color_3_ ts_1_p_ elemento"
+              >
+                <div class="" style="transform: translateY(-0%)">
+                  Nuestra Boda
+                  <br />
+                  <span class="f_bodoni_moda fs_2">10 . 09 . 2026</span>
+                </div>
+              </div>
+              <div style="padding: 2%"></div>
+              <div
+                class="elemento position-relative"
+                style="height: 40px; width: 50%"
+              >
+                <div
+                  class="position-absolute h-100 bg_4 start-100 top-0 translate-middle-x"
+                  style="width: 1px"
+                ></div>
+              </div>
+              <!--   <div
+                        class="f_playwrite_gb_s color_4 lh-1  d-flex align-items-center elemento justify-content-center fs_2 ">
+
+                        <div class="pe-3">Mayo</div>
+                        <div> 10, </div>
+                        <div class="ps-3"> 2025</div>
+
+                    </div> -->
+              <div style="padding: 0%"></div>
+              <!--  <img src="img/logo_boda.png" alt="" style="width: 20%;" class="elemento"> -->
+              <div
+                class="fs_6 f_cinzel_decorative_regular text-dark elemento d-flex justify-content-center align-items-center"
+              >
+                J <span class="fs_4 f_cormorant">&</span> R
+              </div>
+
+              <div style="padding: 0%"></div>
+
+              <div
+                class="elemento position-relative"
+                style="height: 40px; width: 50%"
+              >
+                <div
+                  class="position-absolute h-100 bg_4 start-100 top-0 translate-middle-x"
+                  style="width: 1px"
+                ></div>
+              </div>
+
+              <div style="padding: 3%"></div>
+
+              <div
+                class="fs_3 f_cormorant color_4 d-flex flex-column_ flex-wrap justify-content-center gap-2 lh-1 align-items-center fw-bold_ ts_1_ color_3_ ts_1_p_ elemento"
+              >
+                <div class="" style="transform: translateY(-0%)">No Faltes</div>
+              </div>
+              <!--  <div class="f_beiruti text-white  d-flex align-items-center justify-content-center fs_2_5 elemento">
+                        <div class="px-4 border-bottom"></div>
+
+                        <div class="text-nowrap px-2">NUESTRA BODA</div>
+
+                        <div class="px-4 border-bottom"></div>
+                    </div> -->
+
+              <div style="padding: 10%"></div>
+
+              <!--      <div class="fs_8 f_cormorant fw-bolder  color_3_ text-white elemento">
+                        Â¡no faltes!
+                    </div> -->
+
+              <div style="padding: 0%"></div>
+            </div>
+
+            <!--   <img src="img/detalle_extremo_02.png" alt="" class="position-absolute top-0 start-0 w-100"
+                    style="transform: rotate(180deg);">
+ -->
+          </div>
+        </div>
+
+
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="modal_texto"
+          tabindex="-1"
+          aria-labelledby="modal_textoLabel"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content rounded-5 f_gluten" id="cambia_estilos">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">
+                  <span id="modal_textoLabel"></span>
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div id="modal_texto_aqui" class="w-100 h-100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-black text-light position-relative" style="z-index: 6">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center p-2 position-relative"
+            style="z-index: 7"
+          >
+            <div
+              class="small fw-light position-relative"
+              style="z-index: 80000"
+            >
+              Realizado por SV Digital
+              <span>
+                <a class="px-2 text-decoration-none text-white">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+                <a class="pe-2 text-decoration-none text-white">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div
+            id="liveToast"
+            class="toast text-bg-success_ text-white ts_0"
+            style="background-color: #bd9101"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="toast-body fs-2 text-center f_gluten">
+              Mensaje agregado! <i class="ps-2 bi bi-check-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--     <script src="../funciones/formularios/buenos_deseos/buenos_deseos.js"></script> -->
+    <script src="logica.js"></script>
+  </body>
+</html>
+
+<!-- cuenta regresiva -->
+<!-- 
+ -->
+<!-- 
+Enviarei um painel para que vocÃª possa cadastrar os nomes dos convidados, e serÃ£o gerados links para cada convidado de onde vocÃª poderÃ¡ enviÃ¡-los. 
+-->
+
+<!--<script src="funciones_globales.js"></script>

@@ -1,0 +1,111 @@
+:root {
+    --alto_pantalla: 100vh;
+    --alto: calc(100vh*9);
+    --ancho_pantalla: calc(var(--alto)/14);
+}
+
+
+.contenedor_padre {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+}
+
+.pantalla {
+
+    height: var(--alto_pantalla);
+    width: var(--ancho_pantalla);
+    background-color: #161616;
+    box-shadow: 0px 0px 40px 5px #03030386;
+    position: relative;
+    /*  overflow: hidden; */
+
+}
+
+
+
+.ts_null {
+    text-shadow: 0px 0px 0px #000000e0;
+}
+
+.ts_0 {
+    text-shadow: 1px 1px 3px #000000e0;
+}
+.ts_1 {
+    text-shadow: 1px 1px 3px #000000, 1px 1px 3px #000000;
+}
+
+.ts_2 {
+    text-shadow: 2px 2px 3px #000000, 2px 2px 3px #000000;
+}
+.fs_2_5 {
+    font-size: 2.5vh;
+}
+
+.ts_3 {
+    text-shadow: 3px 3px 4px #000000,
+        3px 3px 4px #000000;
+}
+
+.ts_4 {
+    text-shadow: 4px 4px 6px #000000, 4px 4px 6px #000000;
+}
+
+.ts_1_p {
+    text-shadow: 1px 1px 0px #000000;
+}
+.ts_2_p {
+    text-shadow: 2px 2px 0px #000000;
+}
+.ts_3_p {
+    text-shadow: 3px 3px 0px #000000;
+}
+.ts_4_p {
+    text-shadow: 4px 4px 0px #000000;
+}
+
+
+
+
+
+.fs_1 {
+    font-size: 1vh;
+}
+
+.fs_2 {
+    font-size: 2vh;
+}
+
+.fs_3 {
+    font-size: 3vh;
+}
+
+.fs_4 {
+    font-size: 4vh;
+}
+
+.fs_5 {
+    font-size: 5vh;
+}
+
+.fs_6 {
+    font-size: 6vh;
+}
+
+.fs_7 {
+    font-size: 7vh;
+}
+
+.fs_8 {
+    font-size: 8vh;
+}
+
+.fs_9 {
+    font-size: 9vh;
+}
+
+.fs_10 {
+    font-size: 10vh;
+}
