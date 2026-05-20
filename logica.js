@@ -50,7 +50,7 @@ function validar_boton_guardar() {
 }
 
 const API_URL =
-  "http://pocketbase-mc3ojh2li0io984rh3c4dzsa.62.171.144.14.sslip.io/api/collections/deseos/records";
+  "https://pocketbase-mc3ojh2li0io984rh3c4dzsa.62.171.144.14.sslip.io/api/collections/deseos/records";
 
 async function obtener_deseos() {
   try {
