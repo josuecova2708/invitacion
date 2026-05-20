@@ -50,7 +50,7 @@ function validar_boton_guardar() {
 }
 
 const API_URL =
-  "https://pocketbase-mc3ojh2li0io984rh3c4dzsa.62.171.144.14.sslip.io/api/collections/deseos/records";
+  "https://base-boda.duckdns.org/api/collections/deseos/records";
 
 async function obtener_deseos() {
   try {
@@ -594,7 +594,7 @@ const elemento_derecha = document.querySelectorAll(".elemento_derecha");
 // const elemento_flecha = document.querySelectorAll('.elemento_flecha');
 
 const options = {
-  root: null, // Utiliza el viewport como área de observación
+  root: document.querySelector(".pantalla"), // Utiliza el viewport como área de observación
   threshold: 0.5, // Define el porcentaje de visibilidad requerido para disparar la animación
 };
 
@@ -619,7 +619,7 @@ elemento.forEach((e) => {
 });
 
 const options_2 = {
-  root: null, // Utiliza el viewport como área de observación
+  root: document.querySelector(".pantalla"), // Utiliza el viewport como área de observación
   threshold: 0.2, // Define el porcentaje de visibilidad requerido para disparar la animación
 };
 const observer_2 = new IntersectionObserver((entries, observer_2) => {
@@ -643,7 +643,7 @@ elemento_2.forEach((e) => {
 });
 
 const options_3 = {
-  root: null, // Utiliza el viewport como área de observación
+  root: document.querySelector(".pantalla"), // Utiliza el viewport como área de observación
   threshold: 0.0, // Define el porcentaje de visibilidad requerido para disparar la animación
 };
 const observer_3 = new IntersectionObserver((entries, observer_3) => {
