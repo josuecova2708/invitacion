@@ -49,8 +49,7 @@ function validar_boton_guardar() {
   }
 }
 
-const API_URL =
-  "https://base-boda.duckdns.org/api/collections/deseos/records";
+const API_URL = "https://base-boda.duckdns.org/api/collections/deseos/records";
 
 async function obtener_deseos() {
   try {
@@ -170,17 +169,17 @@ ceremonia_religiosa.push([
 ]);
 ceremonia_religiosa.push([
   "Ceremonia civil ",
-  "8:00 pm",
+  "7:30 pm",
   "https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_110_20250418012101.png",
 ]);
 ceremonia_religiosa.push([
   "Fotos",
-  "9:00 pm",
+  "9:35 pm",
   "https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_154_20250504162422.png",
 ]);
 ceremonia_religiosa.push([
   "Cena",
-  "9:30 pm",
+  "10:00 pm",
   "https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_151_20250504162422.png",
 ]);
 ceremonia_religiosa.push([
@@ -190,7 +189,7 @@ ceremonia_religiosa.push([
 ]);
 ceremonia_religiosa.push([
   "Fin del Evento",
-  "11:30",
+  "02:00",
   "https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_155_20250504162422.png",
 ]);
 /*  
@@ -356,6 +355,52 @@ function mover_scroll_x(px, id) {
   }
 }
 
+// Avanza la galería de a una foto y la deja centrada. Al llegar al final vuelve
+// a empezar (y al revés con la flecha izquierda).
+function mover_galeria(direccion, id) {
+  var contenedor = document.getElementById(id);
+  if (!contenedor) return;
+
+  var fotos = Array.prototype.slice.call(contenedor.children);
+  if (!fotos.length) return;
+
+  // Foto que está más cerca del centro ahora mismo (soporta el swipe manual).
+  var centro = contenedor.scrollLeft + contenedor.clientWidth / 2;
+  var actual = 0;
+  var menor_distancia = Infinity;
+  fotos.forEach(function (foto, i) {
+    var distancia = Math.abs(foto.offsetLeft + foto.offsetWidth / 2 - centro);
+    if (distancia < menor_distancia) {
+      menor_distancia = distancia;
+      actual = i;
+    }
+  });
+
+  // Los extremos no se pueden centrar del todo, así que el borde también cuenta
+  // como "llegué al final" para que el loop dispare.
+  var borde_derecho =
+    contenedor.scrollLeft + contenedor.clientWidth >=
+    contenedor.scrollWidth - 1;
+  var borde_izquierdo = contenedor.scrollLeft <= 1;
+
+  var siguiente = actual + direccion;
+  if (direccion > 0 && (siguiente > fotos.length - 1 || borde_derecho)) {
+    siguiente = 0;
+  }
+  if (direccion < 0 && (siguiente < 0 || borde_izquierdo)) {
+    siguiente = fotos.length - 1;
+  }
+
+  var foto_destino = fotos[siguiente];
+  contenedor.scrollTo({
+    top: 0,
+    left:
+      foto_destino.offsetLeft -
+      (contenedor.clientWidth - foto_destino.offsetWidth) / 2,
+    behavior: "smooth",
+  });
+}
+
 function mostrar_foto(elem) {
   document.getElementById("canvas_fotos").classList.add("show");
   document.getElementById("fondo_galeria").style.backgroundImage =
@@ -369,45 +414,26 @@ function mostrar_foto(elem) {
 }
 
 let array_fotos_galeria = [];
-array_fotos_galeria.push([
-  "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=80",
-  "center",
-]);
-// array_fotos_galeria.push(['https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=80', 'center']);
-array_fotos_galeria.push([
-  "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=80",
-  "center",
-]);
-array_fotos_galeria.push([
-  "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=80",
-  "center",
-]);
-array_fotos_galeria.push([
-  "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=80",
-  "center",
-]);
-//  array_fotos_galeria.push(['https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=80', 'center']);
-array_fotos_galeria.push([
-  "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=80",
-  "center",
-]);
-array_fotos_galeria.push([
-  "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=80",
-  "center",
-]);
-// array_fotos_galeria.push(['https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=80', 'center']);
-array_fotos_galeria.push([
-  "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=80",
-  "center",
-]);
-array_fotos_galeria.push([
-  "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=80",
-  "center",
-]);
-array_fotos_galeria.push([
-  "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&q=80",
-  "center",
-]);
+
+// Fotos del bucket. Para agregar o quitar, solo se edita el nombre del archivo.
+[
+  "DSC_0004AAA.webp",
+  "DSC_0018AAA.webp",
+  "DSC_0035AAA.webp",
+  "DSC_0050AAA (1).webp",
+  "DSC_0057AAA.webp",
+  "DSC_0071AAA.webp",
+  "DSC_0094AAA.webp",
+  "DSC_0120AAA.jpg.webp",
+  "DSC_0134AAA.webp",
+  "DSC_0175AAA.webp",
+].forEach((archivo) => {
+  array_fotos_galeria.push([
+    "https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/fotosWebp/" +
+      archivo.replace(/ /g, "%20"),
+    "center",
+  ]);
+});
 
 array_fotos_galeria.forEach((e) => {
   document.getElementById("app_galeria").innerHTML += `
@@ -416,9 +442,9 @@ array_fotos_galeria.forEach((e) => {
                  data-bs-toggle="offcanvas" data-bs-target="#canvas_fotos"
                      aria-controls="canvas_fotos" onclick="mostrar_foto('${e[0]}')">
                     <div class="ratio rounded-0 overflow-hidden shadow_ border_ border-2_ border-white_  position-relative"
-                        style="--bs-aspect-ratio: 100%; background:url(${e[0]});background-position:${e[1]};background-size:cover;">
+                        style="--bs-aspect-ratio: 100%; background:url('${e[0]}');background-position:${e[1]};background-size:cover;">
                        
-                        <div class="position-absolute h-100 w-100 bg-warning_ bg-opacity-10" style="background:#C2C2C245;"></div>
+                        <div class="position-absolute h-100 w-100 bg-warning_ bg-opacity-10" style="background:#00000035;"></div>
                     </div>
                 </div>
             </div>
