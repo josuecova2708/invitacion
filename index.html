@@ -24,6 +24,12 @@
     <meta property="og:image:height" content="650" />
     <!-- <meta property="og:updated_time" content="1440432930"> -->
     <meta property="og:type" content="website" />
+    <!-- Preconnect para carga anticipada de dominios externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -36,7 +42,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Alex+Brush&family=Amatic+SC:wght@400;700&family=Beiruti:wght@200..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Gluten:wght@100..900&family=Gruppo&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Parisienne&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Qwitcher+Grypen:wght@400;700&family=Saira+Semi+Condensed:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Beiruti:wght@200..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Gruppo&display=swap"
     />
 
     <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Gruppo&family=Gluten:wght@400;600&display=swap">
@@ -687,7 +693,7 @@
                     Josue Covarrubias Rodriguez
                   </div>
                   <div
-                    class="fs_4 f_parisienne"
+                    class="fs_4 f_alex_brush_regular"
                     style="transform: translateY(0%)"
                   >
                     <span class="fs_2">&</span>
@@ -823,7 +829,7 @@
               </div>
 
               <div
-                class="fs-5 fw-light mt-2 text-warning_ color_1 d-none ts_none f_adlam_display"
+                class="fs-5 fw-light mt-2 text-warning_ color_1 d-none ts_none"
               >
                 <i> 1 Corintios 13:4-5 </i>
               </div>
@@ -1004,7 +1010,7 @@
               </div>
 
               <div
-                class="fs-5 fw-light mt-2 text-warning_ color_1 d-none ts_none f_adlam_display"
+                class="fs-5 fw-light mt-2 text-warning_ color_1 d-none ts_none"
               >
                 <i> 1 Corintios 13:4-5 </i>
               </div>
@@ -1093,7 +1099,7 @@
 
                 <div class="py-5_ cuenta_regresiva w-100 position-relative">
                   <div
-                    class="mt-5_ mx-3_ rounded-3 text-center text-light text_shadow_1_ f_gluten d-flex flex-column align-items-center position-relative"
+                    class="mt-5_ mx-3_ rounded-3 text-center text-light text_shadow_1_ d-flex flex-column align-items-center position-relative"
                   >
                     <div style="padding: 10%"></div>
                     <!-- <div class="text-center fs_2 f_cormorant color_4" style="padding: 0% 10%;">
@@ -1129,7 +1135,7 @@
                     <div style="padding: 5%"></div>
 
                     <div
-                      class="bg_4_ bg-light_ bg-gradient d-none___ text-white__ color_4 fs_1_ bc_2 pb-2 d-flex flex-column f_josefin justify-content-start rounded-1 gap- shadow__ bg_4_ bg-opacity-10 elemento"
+                      class="bg_4_ bg-light_ bg-gradient d-none___ text-white__ color_4 fs_1_ bc_2 pb-2 d-flex flex-column justify-content-start rounded-1 gap- shadow__ bg_4_ bg-opacity-10 elemento"
                       style="
                         background-color_: #013b63;
                         width: 45%;
@@ -1191,7 +1197,7 @@
           </div>
           <div style="padding: 2%"></div>
           <div
-            class="row g-0 fs_3 f_libre_bodoni row-cols-4 justify-content-center text-black-50_ color_2 text-center text-truncate w-100 elemento"
+            class="row g-0 fs_3 f_bodoni_moda row-cols-4 justify-content-center text-black-50_ color_2 text-center text-truncate w-100 elemento"
           >
             <div class="p-1 bor position-relative">
               <div class="fw-bold_" id="dias"></div>
@@ -1351,7 +1357,7 @@
             <div style="padding: 3%"></div>
 
             <div
-              class="rounded-0 f_saira_semicondensed fw-semibold fs_2 bg_0 border_bc_4 color_4_ text-light border_ bc_4_ elemento heart shadow-sm text-nowrap lh-1"
+              class="rounded-0 f_beiruti fw-semibold fs_2 bg_0 border_bc_4 color_4_ text-light border_ bc_4_ elemento heart shadow-sm text-nowrap lh-1"
               style="padding: 3% 5% 2% 5%"
             >
               <a
@@ -2220,19 +2226,43 @@
             </div>
 
             <div style="padding: 2%"></div>
-            <div class="d-flex justify-content-center gap-3 mt-3">
-              <!-- <div class="btn btn-sm border-0 fs_2_5 bg_0 shadow color_2 text-light_ rounded-0 f_cormorant heart"
-                            style="" onclick="abrirWhatsApp('59169153601')">
-                             Confirmar
-                        </div> -->
-              <a
-                class="btn btn-sm border-0 fs_2_5 bg_0 shadow color_2 text-light_ rounded-0 f_cormorant heart"
-                style=""
-                href="https://wa.me/59177616799?text=Confirmo%20mi%20asistencia"
-                target="_blank"
-              >
-                <i class="bi bi-whatsapp pe-1"></i>Confirmar
-              </a>
+
+            <!-- Formulario RSVP -->
+            <div class="px-5 elemento w-100">
+              <div class="d-flex flex-column gap-3">
+
+                <input
+                  type="text"
+                  id="rsvp_nombre"
+                  placeholder="Tu nombre completo"
+                  autocomplete="name"
+                  class="border-0 border-bottom bg-transparent color_4 f_cormorant fs_2_5 text-center py-1 w-100"
+                  style="outline: none; border-color: var(--color_4) !important;"
+                  oninput="validar_rsvp()"
+                />
+
+                <input
+                  type="number"
+                  id="rsvp_integrantes"
+                  placeholder="¿Cuántos asistirán?"
+                  min="1"
+                  max="20"
+                  class="border-0 border-bottom bg-transparent color_4 f_cormorant fs_2_5 text-center py-1 w-100"
+                  style="outline: none; border-color: var(--color_4) !important;"
+                  oninput="validar_rsvp()"
+                />
+
+                <div style="padding: 1%"></div>
+
+                <button
+                  id="btn_confirmar_rsvp"
+                  class="btn border-0 fs_2_5 bg_0 shadow color_2 rounded-0 f_cormorant heart disabled"
+                  onclick="confirmar_whatsapp()"
+                >
+                  <i class="bi bi-whatsapp pe-1"></i>Confirmar asistencia
+                </button>
+
+              </div>
             </div>
 
             <div style="padding: 7%"></div>
@@ -2930,7 +2960,7 @@
           <div
             class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
           >
-            <div class="modal-content rounded-5 f_gluten" id="cambia_estilos">
+            <div class="modal-content rounded-5 f_cormorant" id="cambia_estilos">
               <div class="modal-header">
                 <h1 class="modal-title fs-5">
                   <span id="modal_textoLabel"></span>
@@ -2981,7 +3011,7 @@
             aria-live="assertive"
             aria-atomic="true"
           >
-            <div class="toast-body fs-2 text-center f_gluten">
+            <div class="toast-body fs-2 text-center f_cormorant">
               Mensaje agregado! <i class="ps-2 bi bi-check-circle"></i>
             </div>
           </div>
