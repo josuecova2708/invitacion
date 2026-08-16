@@ -174,7 +174,7 @@ ceremonia_religiosa.push([
 ]);
 ceremonia_religiosa.push([
   "Fotos",
-  "9:35 pm",
+  "9:30 pm",
   "https://minio-wcggss4ggw4kgog0oswgsk84.62.171.144.14.sslip.io/boda/imagenes/img_154_20250504162422.png",
 ]);
 ceremonia_religiosa.push([
