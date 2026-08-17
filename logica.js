@@ -890,9 +890,8 @@ document.addEventListener("DOMContentLoaded", function () {
 // ── RSVP: Formulario de confirmación de asistencia ──────────────────
 function validar_rsvp() {
   const nombre = document.getElementById("rsvp_nombre").value.trim();
-  const integrantes = parseInt(document.getElementById("rsvp_integrantes").value);
   const btn = document.getElementById("btn_confirmar_rsvp");
-  if (nombre.length > 0 && integrantes >= 1) {
+  if (nombre.length > 0) {
     btn.classList.remove("disabled");
   } else {
     btn.classList.add("disabled");
@@ -901,10 +900,8 @@ function validar_rsvp() {
 
 function confirmar_whatsapp() {
   const nombre = document.getElementById("rsvp_nombre").value.trim();
-  const integrantes = parseInt(document.getElementById("rsvp_integrantes").value);
-  const personas = integrantes === 1 ? "1 persona" : `${integrantes} personas`;
   const msg = encodeURIComponent(
-    `¡Hola! Soy ${nombre}. Confirmo mi asistencia a su boda. Asistiremos ${personas}. 🎉`
+    `¡Hola! Soy ${nombre}. Confirmo mi asistencia a su boda. 🎉`
   );
   window.open(`https://wa.me/59177616799?text=${msg}`, "_blank");
 }
